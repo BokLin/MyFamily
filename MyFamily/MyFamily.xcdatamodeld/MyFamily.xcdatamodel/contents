@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BaseTable" representedClassName="MFBaseModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="HolidayTable" representedClassName="MFHolidayModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="holidayID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isLunar" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="IndexTable" representedClassName="MFIndexModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_holiday" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_memo" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_note" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_noteCategory" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_noteGroup" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_person" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_region" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_relation" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_user" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_user_memo" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_user_note" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_user_noteGroup" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="MemoTable" representedClassName="MFMemoModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="customDate" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="cycleType" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="holidayID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isCycle" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isHoliday" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isLunar" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="memoID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userMemoID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="userMemo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User_MemoTable" inverseName="memo" inverseEntity="User_MemoTable" syncable="YES"/>
+    </entity>
+    <entity name="MessageTable" representedClassName="MFMessageModel" syncable="YES"/>
+    <entity name="NoteCategoryTable" representedClassName="MFNoteCategoryModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="noteCategoryID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="NoteGroupTable" representedClassName="MFNoteGroupModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="noteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="user_NoteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="user_note" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_NoteTable" inverseName="noteGroup" inverseEntity="User_NoteTable" syncable="YES"/>
+        <relationship name="userNoteGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User_NoteGroupTable" inverseName="noteGroup" inverseEntity="User_NoteGroupTable" syncable="YES"/>
+    </entity>
+    <entity name="NoteTable" representedClassName="MFNoteModel" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="noteID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userNoteID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="userNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User_NoteTable" inverseName="note" inverseEntity="User_NoteTable" syncable="YES"/>
+    </entity>
+    <entity name="PersonTable" representedClassName="MFPersonModel" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="birthday_isLunar" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="blog" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="bloodType" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deathDate" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="deathDate_isLunar" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="NO" syncable="YES"/>
+        <attribute name="generation" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="height_CM" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="hobby" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="iDCard" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDeath" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="job" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="locate" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="personID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="qq" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="realName" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="regionID_homeland" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="regionID_living" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="weChat" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="weibo" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="weight_KG" optional="YES" attributeType="Float" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="relation_froms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RelationTable" inverseName="person_from" inverseEntity="RelationTable" syncable="YES"/>
+        <relationship name="relation_tos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RelationTable" inverseName="person_to" inverseEntity="RelationTable" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTable" inverseName="person" inverseEntity="UserTable" syncable="YES"/>
+    </entity>
+    <entity name="RegionTable" representedClassName="MFRegionModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="region_city" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="region_county" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="region_province" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="regionID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="regionID_uplevel" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="region_downlevel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RegionTable" inverseName="region_uplevel" inverseEntity="RegionTable" syncable="YES"/>
+        <relationship name="region_uplevel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RegionTable" inverseName="region_downlevel" inverseEntity="RegionTable" syncable="YES"/>
+    </entity>
+    <entity name="RelationTable" representedClassName="MFRelationModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="personID_from" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="personID_to" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="relationID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="relationType" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="person_from" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonTable" inverseName="relation_froms" inverseEntity="PersonTable" syncable="YES"/>
+        <relationship name="person_to" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonTable" inverseName="relation_tos" inverseEntity="PersonTable" syncable="YES"/>
+    </entity>
+    <entity name="User_MemoTable" representedClassName="MFUser_MemoModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="memoID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="user_memoID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="memo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MemoTable" inverseName="userMemo" inverseEntity="MemoTable" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTable" inverseName="user_Memos" inverseEntity="UserTable" syncable="YES"/>
+    </entity>
+    <entity name="User_NoteGroupTable" representedClassName="MFUser_NoteGroupModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="noteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="user_noteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="noteGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteGroupTable" inverseName="userNoteGroup" inverseEntity="NoteGroupTable" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTable" inverseName="user_NoteGroups" inverseEntity="UserTable" syncable="YES"/>
+    </entity>
+    <entity name="User_NoteTable" representedClassName="MFUser_NoteModel" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="noteCategoryID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="user_noteID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteTable" inverseName="userNote" inverseEntity="NoteTable" syncable="YES"/>
+        <relationship name="noteGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteGroupTable" inverseName="user_note" inverseEntity="NoteGroupTable" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTable" inverseName="user_Notes" inverseEntity="UserTable" syncable="YES"/>
+    </entity>
+    <entity name="UserTable" representedClassName="MFUserModel" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="activity" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="password_md5" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="personID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonTable" inverseName="user" inverseEntity="PersonTable" syncable="YES"/>
+        <relationship name="user_Memos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_MemoTable" inverseName="user" inverseEntity="User_MemoTable" syncable="YES"/>
+        <relationship name="user_NoteGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_NoteGroupTable" inverseName="user" inverseEntity="User_NoteGroupTable" syncable="YES"/>
+        <relationship name="user_Notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_NoteTable" inverseName="user" inverseEntity="User_NoteTable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BaseTable" positionX="-767" positionY="-36" width="128" height="223"/>
+        <element name="HolidayTable" positionX="-767" positionY="234" width="128" height="285"/>
+        <element name="IndexTable" positionX="-578" positionY="-45" width="128" height="403"/>
+        <element name="MemoTable" positionX="205" positionY="1197" width="128" height="403"/>
+        <element name="NoteCategoryTable" positionX="-965" positionY="288" width="128" height="270"/>
+        <element name="NoteGroupTable" positionX="198" positionY="828" width="128" height="313"/>
+        <element name="NoteTable" positionX="187" positionY="404" width="128" height="345"/>
+        <element name="RelationTable" positionX="117" positionY="-27" width="128" height="313"/>
+        <element name="PersonTable" positionX="-119" positionY="-247" width="128" height="688"/>
+        <element name="RegionTable" positionX="-342" positionY="-36" width="128" height="345"/>
+        <element name="User_MemoTable" positionX="-119" positionY="1350" width="128" height="300"/>
+        <element name="User_NoteGroupTable" positionX="-137" positionY="953" width="128" height="300"/>
+        <element name="User_NoteTable" positionX="-126" positionY="548" width="128" height="345"/>
+        <element name="UserTable" positionX="-470" positionY="675" width="128" height="390"/>
+        <element name="MessageTable" positionX="-963" positionY="-36" width="128" height="45"/>
+    </elements>
+</model>
