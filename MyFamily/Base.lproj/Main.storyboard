@@ -69,7 +69,7 @@
         <!--任务-->
         <scene sceneID="tZB-09-aMg">
             <objects>
-                <viewController id="XS0-sh-1DN" customClass="MFTaskController" sceneMemberID="viewController">
+                <viewController id="XS0-sh-1DN" customClass="MFTaskListController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hIc-Ff-OPf"/>
                         <viewControllerLayoutGuide type="bottom" id="Ibm-jx-QIw"/>
@@ -87,7 +87,7 @@
         <!--提醒-->
         <scene sceneID="4a7-d1-9ql">
             <objects>
-                <viewController id="h5c-93-xnW" customClass="MFNotifController" sceneMemberID="viewController">
+                <viewController id="h5c-93-xnW" customClass="MFNotifListController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W5m-n4-E0G"/>
                         <viewControllerLayoutGuide type="bottom" id="0j0-5c-VM8"/>
@@ -192,7 +192,7 @@
         <!--消息-->
         <scene sceneID="dyi-He-pwq">
             <objects>
-                <viewController id="Ypi-Fo-7ek" customClass="MFMessageController" sceneMemberID="viewController">
+                <viewController id="Ypi-Fo-7ek" customClass="MFMessageListController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V7r-hE-6hd"/>
                         <viewControllerLayoutGuide type="bottom" id="vqq-WU-8ua"/>

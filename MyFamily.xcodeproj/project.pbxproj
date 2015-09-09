@@ -232,16 +232,16 @@
 		A2686C361BA04236005C9BED /* TabBarPages */ = {
 			isa = PBXGroup;
 			children = (
-				A2686C371BA04236005C9BED /* MFContactListController.h */,
-				A2686C381BA04236005C9BED /* MFContactListController.m */,
 				A2686C391BA04236005C9BED /* MFMessageListController.h */,
 				A2686C3A1BA04236005C9BED /* MFMessageListController.m */,
-				A2686C3B1BA04236005C9BED /* MFMoreController.h */,
-				A2686C3C1BA04236005C9BED /* MFMoreController.m */,
-				A2686C3D1BA04236005C9BED /* MFNotifListController.h */,
-				A2686C3E1BA04236005C9BED /* MFNotifListController.m */,
+				A2686C371BA04236005C9BED /* MFContactListController.h */,
+				A2686C381BA04236005C9BED /* MFContactListController.m */,
 				A2686C3F1BA04236005C9BED /* MFTaskListController.h */,
 				A2686C401BA04236005C9BED /* MFTaskListController.m */,
+				A2686C3D1BA04236005C9BED /* MFNotifListController.h */,
+				A2686C3E1BA04236005C9BED /* MFNotifListController.m */,
+				A2686C3B1BA04236005C9BED /* MFMoreController.h */,
+				A2686C3C1BA04236005C9BED /* MFMoreController.m */,
 			);
 			path = TabBarPages;
 			sourceTree = "<group>";
