@@ -56,23 +56,23 @@
     if ([tName isEqualToString:kTableHoliday]) {
         return ++_indexMax.t_holiday;
     }
-    if ([tName isEqualToString:kTableNotif]) {
-        return ++_indexMax.t_notif;
-    }
-    if ([tName isEqualToString:kTableNoteCategory]) {
-        return ++_indexMax.t_noteCategory;
-    }
     if ([tName isEqualToString:kTableNoteGroup]) {
         return ++_indexMax.t_noteGroup;
     }
     if ([tName isEqualToString:kTableNote]) {
         return ++_indexMax.t_note;
     }
+    if ([tName isEqualToString:kTableNotif]) {
+        return ++_indexMax.t_notif;
+    }
     if ([tName isEqualToString:kTablePerson]) {
         return ++_indexMax.t_person;
     }
     if ([tName isEqualToString:kTableRelation]) {
         return ++_indexMax.t_relation;
+    }
+    if ([tName isEqualToString:kTableTask]) {
+        return ++_indexMax.t_task;
     }
     if ([tName isEqualToString:kTableUser_Notif]) {
         return ++_indexMax.t_user_notif;
@@ -82,6 +82,9 @@
     }
     if ([tName isEqualToString:kTableUser_NoteGroup]) {
         return ++_indexMax.t_user_noteGroup;
+    }
+    if ([tName isEqualToString:kTableUser_Task]) {
+        return ++_indexMax.t_user_task;
     }
     if ([tName isEqualToString:kTableUser]) {
         return ++_indexMax.t_user;
@@ -104,7 +107,7 @@
     model.x_updateDate = [[NSDate date] timeIntervalSinceReferenceDate];
     model.x_userID_create = [MFRequestHelper shareInstance].user.userID;
     model.x_userID_update = [MFRequestHelper shareInstance].user.userID;
-    model.x_version = [MFUtil appVersion];
+    model.x_version = [MFUtil appBuild];
     model.x_device = [MFUtil device];
     
     return model;

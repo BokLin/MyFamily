@@ -32,8 +32,7 @@
 {
     [super viewWillAppear:animated];
     
-    self.tabBarController.title = @"个人信息";
-    self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    self.title = @"个人信息";
 }
 
 - (void)setUserData

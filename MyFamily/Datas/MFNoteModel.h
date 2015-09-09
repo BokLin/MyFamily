@@ -20,6 +20,6 @@
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic) int64_t userNoteID;
 @property (nonatomic) int32_t noteType;
-@property (nonatomic, retain) MFUser_NoteModel *userNote;
+@property (nonatomic, retain) MFUser_NoteModel *user_note;
 
 @end

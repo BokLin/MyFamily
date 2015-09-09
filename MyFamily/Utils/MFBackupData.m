@@ -15,16 +15,17 @@
 + (void)backupAllData
 {
     [self backup:kTableIndex];
-    [self backup:kTableNotif removeAtt:@[@"userNotif"]];
-    [self backup:kTableNote removeAtt:@[@"userNote"]];
-    [self backup:kTableNoteGroup removeAtt:@[@"user_note",@"userNoteGroup"]];
+    [self backup:kTableNotif removeAtt:@[@"user_notif"]];
+    [self backup:kTableNote removeAtt:@[@"user_note"]];
+    [self backup:kTableNoteGroup removeAtt:@[@"user_notes",@"user_noteGroup"]];
     [self backup:kTablePerson removeAtt:@[@"relation_froms",@"relation_tos",@"user"]];
     [self backup:kTableRelation removeAtt:@[@"person_from",@"person_to"]];
-    [self backup:kTableUser removeAtt:@[@"person",@"user_Notifs",@"user_NoteGroups",@"user_Notes"]];
-    [self backup:kTableUser_Notif removeAtt:@[@"notif",@"user"]];
+    [self backup:kTableTask removeAtt:@[@"user_task"]];
+    [self backup:kTableUser removeAtt:@[@"person",@"user_notifs",@"user_noteGroups",@"user_notes",@"user_tasks"]];
     [self backup:kTableUser_Note removeAtt:@[@"note",@"noteGroup",@"user"]];
     [self backup:kTableUser_NoteGroup removeAtt:@[@"noteGroup",@"user"]];
-    
+    [self backup:kTableUser_Notif removeAtt:@[@"notif",@"user"]];
+    [self backup:kTableUser_Task removeAtt:@[@"task",@"user"]];
 }
 
 + (void)backup:(NSString *)tName

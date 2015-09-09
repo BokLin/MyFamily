@@ -19,12 +19,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZA9-aP-uA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1648.5" y="53.25"/>
+            <point key="canvasLocation" x="-1554" y="1656"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="IlH-ND-Nje">
             <objects>
-                <tabBarController id="QEa-p3-17I" sceneMemberID="viewController">
+                <tabBarController id="QEa-p3-17I" customClass="MFMainTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Pla-d2-eMo"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Xf3-W5-02a">
@@ -33,15 +33,77 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="NM6-3E-BFt" kind="relationship" relationship="viewControllers" id="004-u5-RRU"/>
-                        <segue destination="qd1-We-hBt" kind="relationship" relationship="viewControllers" id="ANz-Zt-gTG"/>
+                        <segue destination="Ypi-Fo-7ek" kind="relationship" relationship="viewControllers" id="mK9-7u-GQV"/>
+                        <segue destination="NM6-3E-BFt" kind="relationship" relationship="viewControllers" id="GIV-Xh-oBp"/>
+                        <segue destination="XS0-sh-1DN" kind="relationship" relationship="viewControllers" id="6dq-Bj-vsQ"/>
+                        <segue destination="h5c-93-xnW" kind="relationship" relationship="viewControllers" id="ViL-HP-Gh6"/>
+                        <segue destination="Tt6-3M-qdI" kind="relationship" relationship="viewControllers" id="iTe-Bj-QiS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SL1-ay-42s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-756" y="53.25"/>
+            <point key="canvasLocation" x="-741" y="1656"/>
         </scene>
-        <!--Item-->
+        <!--更多-->
+        <scene sceneID="eEB-dL-Cdd">
+            <objects>
+                <viewController id="Tt6-3M-qdI" customClass="MFMoreController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nlg-Gc-pIg"/>
+                        <viewControllerLayoutGuide type="bottom" id="NiZ-O1-lcl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WXx-iW-Qdq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="更多" id="jbQ-Lf-Hed"/>
+                    <connections>
+                        <segue destination="qd1-We-hBt" kind="show" id="xwA-i4-IWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAV-zd-ZkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="1656"/>
+        </scene>
+        <!--任务-->
+        <scene sceneID="tZB-09-aMg">
+            <objects>
+                <viewController id="XS0-sh-1DN" customClass="MFTaskController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hIc-Ff-OPf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ibm-jx-QIw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A1V-rh-OtN">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="任务" id="2Gc-06-d7l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWM-fB-xXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="399.75"/>
+        </scene>
+        <!--提醒-->
+        <scene sceneID="4a7-d1-9ql">
+            <objects>
+                <viewController id="h5c-93-xnW" customClass="MFNotifController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W5m-n4-E0G"/>
+                        <viewControllerLayoutGuide type="bottom" id="0j0-5c-VM8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ooe-AG-p6l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="提醒" id="ox1-y3-Dby"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPA-cN-LWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="1027.5"/>
+        </scene>
+        <!--个人-->
         <scene sceneID="JyY-ZN-0b6">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="qd1-We-hBt" customClass="MFUserInfoController" sceneMemberID="viewController">
@@ -121,13 +183,32 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="02m-Td-sGu"/>
+                    <tabBarItem key="tabBarItem" title="个人" id="02m-Td-sGu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fM6-yV-9dV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="615"/>
+            <point key="canvasLocation" x="1362" y="1656"/>
         </scene>
-        <!--Item-->
+        <!--消息-->
+        <scene sceneID="dyi-He-pwq">
+            <objects>
+                <viewController id="Ypi-Fo-7ek" customClass="MFMessageController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V7r-hE-6hd"/>
+                        <viewControllerLayoutGuide type="bottom" id="vqq-WU-8ua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N0W-n5-BbL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="消息" id="hqZ-go-8fT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3K7-pS-KSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="-863.25"/>
+        </scene>
+        <!--联系人-->
         <scene sceneID="dIH-VR-ZSz">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="NM6-3E-BFt" customClass="MFContactListController" sceneMemberID="viewController">
@@ -187,7 +268,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="brj-aK-UQX"/>
+                    <tabBarItem key="tabBarItem" title="联系人" id="brj-aK-UQX"/>
                     <connections>
                         <outlet property="_tableView" destination="0xY-Ib-3Bm" id="uPm-wh-yll"/>
                         <segue destination="zAa-WZ-czc" kind="show" identifier="SegueAnyToPersonDetail" id="UQd-59-RDX"/>
@@ -196,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rX-T8-t09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="-275.25"/>
+            <point key="canvasLocation" x="282" y="-240"/>
         </scene>
         <!--Person Detail Controller-->
         <scene sceneID="7jI-or-GK3">
@@ -242,7 +323,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPA-XQ-8VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="-275.25"/>
+            <point key="canvasLocation" x="1362" y="-240"/>
         </scene>
         <!--Person Create Controller-->
         <scene sceneID="Luc-jh-kgK">
@@ -420,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RH-ks-Sol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2091" y="-275.25"/>
+            <point key="canvasLocation" x="1362" y="-863.25"/>
         </scene>
     </scenes>
 </document>

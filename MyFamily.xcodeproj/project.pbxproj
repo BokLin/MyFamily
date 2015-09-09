@@ -10,12 +10,10 @@
 		A2199F7E1B8475830062A750 /* MFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2199F7D1B8475830062A750 /* MFBaseViewController.m */; };
 		A25DE6E81B9BEA2E0071FD1C /* MFInitialData.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE6E71B9BEA2E0071FD1C /* MFInitialData.m */; };
 		A25DE6EA1B9C1E220071FD1C /* holidays.csv in Resources */ = {isa = PBXBuildFile; fileRef = A25DE6E91B9C1E220071FD1C /* holidays.csv */; };
-		A26680191B9891C500DC2A57 /* MFPersonCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26680181B9891C500DC2A57 /* MFPersonCreateController.m */; };
 		A2686BCD1B9FEA4F005C9BED /* MFMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BCC1B9FEA4F005C9BED /* MFMessageModel.m */; };
 		A2686BD01B9FEA50005C9BED /* MFTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BCF1B9FEA50005C9BED /* MFTaskModel.m */; };
 		A2686BD31B9FEA51005C9BED /* MFHolidayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BD21B9FEA51005C9BED /* MFHolidayModel.m */; };
 		A2686BD61B9FEA51005C9BED /* MFRegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BD51B9FEA51005C9BED /* MFRegionModel.m */; };
-		A2686BD91B9FEA51005C9BED /* MFNoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BD81B9FEA51005C9BED /* MFNoteGroupModel.m */; };
 		A2686BDC1B9FEA51005C9BED /* MFRelationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BDB1B9FEA51005C9BED /* MFRelationModel.m */; };
 		A2686BDF1B9FEA51005C9BED /* MFUser_NoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BDE1B9FEA51005C9BED /* MFUser_NoteGroupModel.m */; };
 		A2686BE21B9FEA51005C9BED /* MFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BE11B9FEA51005C9BED /* MFNoteModel.m */; };
@@ -27,6 +25,20 @@
 		A2686BF71B9FEA52005C9BED /* MFPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BF61B9FEA52005C9BED /* MFPersonModel.m */; };
 		A2686BFA1B9FEA52005C9BED /* MFUser_TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BF91B9FEA52005C9BED /* MFUser_TaskModel.m */; };
 		A2686BFD1B9FEB99005C9BED /* MFUser_NotifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BFC1B9FEB99005C9BED /* MFUser_NotifModel.m */; };
+		A2686C001BA003F4005C9BED /* MFNoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686BFF1BA003F4005C9BED /* MFNoteGroupModel.m */; };
+		A2686C1A1BA03AC6005C9BED /* MFPersonCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C151BA03AC6005C9BED /* MFPersonCreateController.m */; };
+		A2686C1B1BA03AC6005C9BED /* MFPersonDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C171BA03AC6005C9BED /* MFPersonDetailController.m */; };
+		A2686C1C1BA03AC6005C9BED /* MFUserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C191BA03AC6005C9BED /* MFUserInfoController.m */; };
+		A2686C1F1BA0401A005C9BED /* MFPasswordMController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C1E1BA0401A005C9BED /* MFPasswordMController.m */; };
+		A2686C231BA040BF005C9BED /* MFNoteListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C221BA040BF005C9BED /* MFNoteListController.m */; };
+		A2686C2C1BA04187005C9BED /* MFNotifDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C2B1BA04187005C9BED /* MFNotifDetailController.m */; };
+		A2686C321BA041C8005C9BED /* MFMessageDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C311BA041C8005C9BED /* MFMessageDetailController.m */; };
+		A2686C351BA041E3005C9BED /* MFTaskDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C341BA041E3005C9BED /* MFTaskDetailController.m */; };
+		A2686C411BA04236005C9BED /* MFContactListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C381BA04236005C9BED /* MFContactListController.m */; };
+		A2686C421BA04236005C9BED /* MFMessageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C3A1BA04236005C9BED /* MFMessageListController.m */; };
+		A2686C431BA04236005C9BED /* MFMoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C3C1BA04236005C9BED /* MFMoreController.m */; };
+		A2686C441BA04236005C9BED /* MFNotifListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C3E1BA04236005C9BED /* MFNotifListController.m */; };
+		A2686C451BA04236005C9BED /* MFTaskListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C401BA04236005C9BED /* MFTaskListController.m */; };
 		A268CEA41B903E9D00316CBB /* MFRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A268CEA31B903E9D00316CBB /* MFRequestHelper.m */; };
 		A26C336A1B7B2AC00065E103 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A26C33691B7B2AC00065E103 /* main.m */; };
 		A26C336D1B7B2AC00065E103 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A26C336C1B7B2AC00065E103 /* AppDelegate.m */; };
@@ -38,13 +50,10 @@
 		A27447A41B95BFC0006FD7D1 /* regions.csv in Resources */ = {isa = PBXBuildFile; fileRef = A27447A21B95BFC0006FD7D1 /* regions.csv */; };
 		A28B3AC61B96D8F500181B1D /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B3AC51B96D8F500181B1D /* NSString+Util.m */; };
 		A28B3AC91B96DCF600181B1D /* NSNumber+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B3AC81B96DCF600181B1D /* NSNumber+Util.m */; };
-		A28B3AFC1B97054A00181B1D /* MFPersonDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B3AFB1B97054A00181B1D /* MFPersonDetailController.m */; };
 		A2901CEE1B9D737A00D92129 /* MFBackupData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2901CED1B9D737A00D92129 /* MFBackupData.m */; };
 		A2901CF11B9D7A2F00D92129 /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A2901CF01B9D7A2F00D92129 /* NSObject+Util.m */; };
 		A2F106351B94478100E7B020 /* MFDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F106341B94478100E7B020 /* MFDataHelper.m */; };
 		A2F106381B945BB900E7B020 /* MFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F106371B945BB900E7B020 /* MFUtil.m */; };
-		A2FF0CDD1B8C62DD00C520A5 /* MFContactListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF0CDC1B8C62DD00C520A5 /* MFContactListController.m */; };
-		A2FF0CE01B8C62F300C520A5 /* MFUserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF0CDF1B8C62F300C520A5 /* MFUserInfoController.m */; };
 		A2FF0CE31B8C632B00C520A5 /* MFMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF0CE21B8C632B00C520A5 /* MFMainTabBarController.m */; };
 		A2FF0CEA1B8C79D000C520A5 /* MFContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF0CE91B8C79D000C520A5 /* MFContactCell.m */; };
 /* End PBXBuildFile section */
@@ -56,8 +65,6 @@
 		A25DE6E61B9BEA2E0071FD1C /* MFInitialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFInitialData.h; sourceTree = "<group>"; };
 		A25DE6E71B9BEA2E0071FD1C /* MFInitialData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFInitialData.m; sourceTree = "<group>"; };
 		A25DE6E91B9C1E220071FD1C /* holidays.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = holidays.csv; sourceTree = "<group>"; };
-		A26680171B9891C500DC2A57 /* MFPersonCreateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonCreateController.h; sourceTree = "<group>"; };
-		A26680181B9891C500DC2A57 /* MFPersonCreateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonCreateController.m; sourceTree = "<group>"; };
 		A2686BCB1B9FEA4F005C9BED /* MFMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMessageModel.h; sourceTree = "<group>"; };
 		A2686BCC1B9FEA4F005C9BED /* MFMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMessageModel.m; sourceTree = "<group>"; };
 		A2686BCE1B9FEA50005C9BED /* MFTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTaskModel.h; sourceTree = "<group>"; };
@@ -66,8 +73,6 @@
 		A2686BD21B9FEA51005C9BED /* MFHolidayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHolidayModel.m; sourceTree = "<group>"; };
 		A2686BD41B9FEA51005C9BED /* MFRegionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRegionModel.h; sourceTree = "<group>"; };
 		A2686BD51B9FEA51005C9BED /* MFRegionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRegionModel.m; sourceTree = "<group>"; };
-		A2686BD71B9FEA51005C9BED /* MFNoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteGroupModel.h; sourceTree = "<group>"; };
-		A2686BD81B9FEA51005C9BED /* MFNoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteGroupModel.m; sourceTree = "<group>"; };
 		A2686BDA1B9FEA51005C9BED /* MFRelationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRelationModel.h; sourceTree = "<group>"; };
 		A2686BDB1B9FEA51005C9BED /* MFRelationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRelationModel.m; sourceTree = "<group>"; };
 		A2686BDD1B9FEA51005C9BED /* MFUser_NoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NoteGroupModel.h; sourceTree = "<group>"; };
@@ -90,6 +95,34 @@
 		A2686BF91B9FEA52005C9BED /* MFUser_TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_TaskModel.m; sourceTree = "<group>"; };
 		A2686BFB1B9FEB99005C9BED /* MFUser_NotifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NotifModel.h; sourceTree = "<group>"; };
 		A2686BFC1B9FEB99005C9BED /* MFUser_NotifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NotifModel.m; sourceTree = "<group>"; };
+		A2686BFE1BA003F4005C9BED /* MFNoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteGroupModel.h; sourceTree = "<group>"; };
+		A2686BFF1BA003F4005C9BED /* MFNoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteGroupModel.m; sourceTree = "<group>"; };
+		A2686C141BA03AC6005C9BED /* MFPersonCreateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonCreateController.h; sourceTree = "<group>"; };
+		A2686C151BA03AC6005C9BED /* MFPersonCreateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonCreateController.m; sourceTree = "<group>"; };
+		A2686C161BA03AC6005C9BED /* MFPersonDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonDetailController.h; sourceTree = "<group>"; };
+		A2686C171BA03AC6005C9BED /* MFPersonDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonDetailController.m; sourceTree = "<group>"; };
+		A2686C181BA03AC6005C9BED /* MFUserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUserInfoController.h; sourceTree = "<group>"; };
+		A2686C191BA03AC6005C9BED /* MFUserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserInfoController.m; sourceTree = "<group>"; };
+		A2686C1D1BA0401A005C9BED /* MFPasswordMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPasswordMController.h; sourceTree = "<group>"; };
+		A2686C1E1BA0401A005C9BED /* MFPasswordMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPasswordMController.m; sourceTree = "<group>"; };
+		A2686C211BA040BF005C9BED /* MFNoteListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteListController.h; sourceTree = "<group>"; };
+		A2686C221BA040BF005C9BED /* MFNoteListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteListController.m; sourceTree = "<group>"; };
+		A2686C2A1BA04187005C9BED /* MFNotifDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotifDetailController.h; sourceTree = "<group>"; };
+		A2686C2B1BA04187005C9BED /* MFNotifDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotifDetailController.m; sourceTree = "<group>"; };
+		A2686C301BA041C8005C9BED /* MFMessageDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMessageDetailController.h; sourceTree = "<group>"; };
+		A2686C311BA041C8005C9BED /* MFMessageDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMessageDetailController.m; sourceTree = "<group>"; };
+		A2686C331BA041E3005C9BED /* MFTaskDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTaskDetailController.h; sourceTree = "<group>"; };
+		A2686C341BA041E3005C9BED /* MFTaskDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTaskDetailController.m; sourceTree = "<group>"; };
+		A2686C371BA04236005C9BED /* MFContactListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFContactListController.h; sourceTree = "<group>"; };
+		A2686C381BA04236005C9BED /* MFContactListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFContactListController.m; sourceTree = "<group>"; };
+		A2686C391BA04236005C9BED /* MFMessageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMessageListController.h; sourceTree = "<group>"; };
+		A2686C3A1BA04236005C9BED /* MFMessageListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMessageListController.m; sourceTree = "<group>"; };
+		A2686C3B1BA04236005C9BED /* MFMoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMoreController.h; sourceTree = "<group>"; };
+		A2686C3C1BA04236005C9BED /* MFMoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMoreController.m; sourceTree = "<group>"; };
+		A2686C3D1BA04236005C9BED /* MFNotifListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotifListController.h; sourceTree = "<group>"; };
+		A2686C3E1BA04236005C9BED /* MFNotifListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotifListController.m; sourceTree = "<group>"; };
+		A2686C3F1BA04236005C9BED /* MFTaskListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTaskListController.h; sourceTree = "<group>"; };
+		A2686C401BA04236005C9BED /* MFTaskListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTaskListController.m; sourceTree = "<group>"; };
 		A268CE6B1B902D2F00316CBB /* Global_Segues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Segues.h; sourceTree = "<group>"; };
 		A268CE6D1B902D5F00316CBB /* Global_Texts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Texts.h; sourceTree = "<group>"; };
 		A268CE6E1B902D7E00316CBB /* Global_Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Colors.h; sourceTree = "<group>"; };
@@ -111,8 +144,6 @@
 		A28B3AC51B96D8F500181B1D /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
 		A28B3AC71B96DCF600181B1D /* NSNumber+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Util.h"; sourceTree = "<group>"; };
 		A28B3AC81B96DCF600181B1D /* NSNumber+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Util.m"; sourceTree = "<group>"; };
-		A28B3AFA1B97054A00181B1D /* MFPersonDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonDetailController.h; sourceTree = "<group>"; };
-		A28B3AFB1B97054A00181B1D /* MFPersonDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonDetailController.m; sourceTree = "<group>"; };
 		A28BCFEF1B9ED01600A72F3A /* Global_Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Enums.h; sourceTree = "<group>"; };
 		A2901CEC1B9D737A00D92129 /* MFBackupData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBackupData.h; sourceTree = "<group>"; };
 		A2901CED1B9D737A00D92129 /* MFBackupData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBackupData.m; sourceTree = "<group>"; };
@@ -123,10 +154,6 @@
 		A2F106361B945BB900E7B020 /* MFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtil.h; sourceTree = "<group>"; };
 		A2F106371B945BB900E7B020 /* MFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtil.m; sourceTree = "<group>"; };
 		A2F106391B94677B00E7B020 /* Global_Variables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Variables.h; sourceTree = "<group>"; };
-		A2FF0CDB1B8C62DD00C520A5 /* MFContactListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFContactListController.h; sourceTree = "<group>"; };
-		A2FF0CDC1B8C62DD00C520A5 /* MFContactListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFContactListController.m; sourceTree = "<group>"; };
-		A2FF0CDE1B8C62F300C520A5 /* MFUserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUserInfoController.h; sourceTree = "<group>"; };
-		A2FF0CDF1B8C62F300C520A5 /* MFUserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserInfoController.m; sourceTree = "<group>"; };
 		A2FF0CE11B8C632B00C520A5 /* MFMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMainTabBarController.h; sourceTree = "<group>"; };
 		A2FF0CE21B8C632B00C520A5 /* MFMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMainTabBarController.m; sourceTree = "<group>"; };
 		A2FF0CE81B8C79D000C520A5 /* MFContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFContactCell.h; sourceTree = "<group>"; };
@@ -144,6 +171,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2686C0E1BA0390B005C9BED /* MessagePages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C301BA041C8005C9BED /* MFMessageDetailController.h */,
+				A2686C311BA041C8005C9BED /* MFMessageDetailController.m */,
+			);
+			path = MessagePages;
+			sourceTree = "<group>";
+		};
+		A2686C0F1BA0390B005C9BED /* NotifPages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C2A1BA04187005C9BED /* MFNotifDetailController.h */,
+				A2686C2B1BA04187005C9BED /* MFNotifDetailController.m */,
+			);
+			path = NotifPages;
+			sourceTree = "<group>";
+		};
+		A2686C101BA0390B005C9BED /* TaskPages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C331BA041E3005C9BED /* MFTaskDetailController.h */,
+				A2686C341BA041E3005C9BED /* MFTaskDetailController.m */,
+			);
+			path = TaskPages;
+			sourceTree = "<group>";
+		};
+		A2686C121BA03A31005C9BED /* MorePages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C1D1BA0401A005C9BED /* MFPasswordMController.h */,
+				A2686C1E1BA0401A005C9BED /* MFPasswordMController.m */,
+			);
+			path = MorePages;
+			sourceTree = "<group>";
+		};
+		A2686C131BA03A3A005C9BED /* PersonPages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C141BA03AC6005C9BED /* MFPersonCreateController.h */,
+				A2686C151BA03AC6005C9BED /* MFPersonCreateController.m */,
+				A2686C161BA03AC6005C9BED /* MFPersonDetailController.h */,
+				A2686C171BA03AC6005C9BED /* MFPersonDetailController.m */,
+				A2686C181BA03AC6005C9BED /* MFUserInfoController.h */,
+				A2686C191BA03AC6005C9BED /* MFUserInfoController.m */,
+			);
+			path = PersonPages;
+			sourceTree = "<group>";
+		};
+		A2686C201BA04080005C9BED /* NotePages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C211BA040BF005C9BED /* MFNoteListController.h */,
+				A2686C221BA040BF005C9BED /* MFNoteListController.m */,
+			);
+			path = NotePages;
+			sourceTree = "<group>";
+		};
+		A2686C361BA04236005C9BED /* TabBarPages */ = {
+			isa = PBXGroup;
+			children = (
+				A2686C371BA04236005C9BED /* MFContactListController.h */,
+				A2686C381BA04236005C9BED /* MFContactListController.m */,
+				A2686C391BA04236005C9BED /* MFMessageListController.h */,
+				A2686C3A1BA04236005C9BED /* MFMessageListController.m */,
+				A2686C3B1BA04236005C9BED /* MFMoreController.h */,
+				A2686C3C1BA04236005C9BED /* MFMoreController.m */,
+				A2686C3D1BA04236005C9BED /* MFNotifListController.h */,
+				A2686C3E1BA04236005C9BED /* MFNotifListController.m */,
+				A2686C3F1BA04236005C9BED /* MFTaskListController.h */,
+				A2686C401BA04236005C9BED /* MFTaskListController.m */,
+			);
+			path = TabBarPages;
+			sourceTree = "<group>";
+		};
 		A26C335B1B7B2AC00065E103 = {
 			isa = PBXGroup;
 			children = (
@@ -241,14 +343,13 @@
 				A2FF0CE21B8C632B00C520A5 /* MFMainTabBarController.m */,
 				A2199F7C1B8475830062A750 /* MFBaseViewController.h */,
 				A2199F7D1B8475830062A750 /* MFBaseViewController.m */,
-				A2FF0CDB1B8C62DD00C520A5 /* MFContactListController.h */,
-				A2FF0CDC1B8C62DD00C520A5 /* MFContactListController.m */,
-				A2FF0CDE1B8C62F300C520A5 /* MFUserInfoController.h */,
-				A2FF0CDF1B8C62F300C520A5 /* MFUserInfoController.m */,
-				A28B3AFA1B97054A00181B1D /* MFPersonDetailController.h */,
-				A28B3AFB1B97054A00181B1D /* MFPersonDetailController.m */,
-				A26680171B9891C500DC2A57 /* MFPersonCreateController.h */,
-				A26680181B9891C500DC2A57 /* MFPersonCreateController.m */,
+				A2686C361BA04236005C9BED /* TabBarPages */,
+				A2686C201BA04080005C9BED /* NotePages */,
+				A2686C131BA03A3A005C9BED /* PersonPages */,
+				A2686C121BA03A31005C9BED /* MorePages */,
+				A2686C0E1BA0390B005C9BED /* MessagePages */,
+				A2686C0F1BA0390B005C9BED /* NotifPages */,
+				A2686C101BA0390B005C9BED /* TaskPages */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -273,8 +374,8 @@
 				A2686BE41B9FEA51005C9BED /* MFIndexModel.m */,
 				A2686BCB1B9FEA4F005C9BED /* MFMessageModel.h */,
 				A2686BCC1B9FEA4F005C9BED /* MFMessageModel.m */,
-				A2686BD71B9FEA51005C9BED /* MFNoteGroupModel.h */,
-				A2686BD81B9FEA51005C9BED /* MFNoteGroupModel.m */,
+				A2686BFE1BA003F4005C9BED /* MFNoteGroupModel.h */,
+				A2686BFF1BA003F4005C9BED /* MFNoteGroupModel.m */,
 				A2686BE01B9FEA51005C9BED /* MFNoteModel.h */,
 				A2686BE11B9FEA51005C9BED /* MFNoteModel.m */,
 				A2686BE91B9FEA51005C9BED /* MFNotifModel.h */,
@@ -392,39 +493,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2686C351BA041E3005C9BED /* MFTaskDetailController.m in Sources */,
 				A2686BCD1B9FEA4F005C9BED /* MFMessageModel.m in Sources */,
+				A2686C1A1BA03AC6005C9BED /* MFPersonCreateController.m in Sources */,
+				A2686C421BA04236005C9BED /* MFMessageListController.m in Sources */,
+				A2686C411BA04236005C9BED /* MFContactListController.m in Sources */,
 				A2901CF11B9D7A2F00D92129 /* NSObject+Util.m in Sources */,
 				A2901CEE1B9D737A00D92129 /* MFBackupData.m in Sources */,
-				A28B3AFC1B97054A00181B1D /* MFPersonDetailController.m in Sources */,
+				A2686C451BA04236005C9BED /* MFTaskListController.m in Sources */,
 				A2686BFD1B9FEB99005C9BED /* MFUser_NotifModel.m in Sources */,
 				A2686BD01B9FEA50005C9BED /* MFTaskModel.m in Sources */,
 				A2686BF11B9FEA51005C9BED /* MFUser_NoteModel.m in Sources */,
 				A2686BF41B9FEA52005C9BED /* MFBaseModel.m in Sources */,
+				A2686C431BA04236005C9BED /* MFMoreController.m in Sources */,
 				A25DE6E81B9BEA2E0071FD1C /* MFInitialData.m in Sources */,
 				A2686BD61B9FEA51005C9BED /* MFRegionModel.m in Sources */,
 				A2F106351B94478100E7B020 /* MFDataHelper.m in Sources */,
+				A2686C2C1BA04187005C9BED /* MFNotifDetailController.m in Sources */,
 				A2686BDC1B9FEA51005C9BED /* MFRelationModel.m in Sources */,
 				A26C336D1B7B2AC00065E103 /* AppDelegate.m in Sources */,
 				A26C336A1B7B2AC00065E103 /* main.m in Sources */,
 				A2686BEB1B9FEA51005C9BED /* MFNotifModel.m in Sources */,
+				A2686C1B1BA03AC6005C9BED /* MFPersonDetailController.m in Sources */,
+				A2686C231BA040BF005C9BED /* MFNoteListController.m in Sources */,
 				A2FF0CEA1B8C79D000C520A5 /* MFContactCell.m in Sources */,
 				A2FF0CE31B8C632B00C520A5 /* MFMainTabBarController.m in Sources */,
+				A2686C321BA041C8005C9BED /* MFMessageDetailController.m in Sources */,
 				A28B3AC91B96DCF600181B1D /* NSNumber+Util.m in Sources */,
-				A2FF0CDD1B8C62DD00C520A5 /* MFContactListController.m in Sources */,
 				A26C33701B7B2AC00065E103 /* MyFamily.xcdatamodeld in Sources */,
 				A268CEA41B903E9D00316CBB /* MFRequestHelper.m in Sources */,
 				A2199F7E1B8475830062A750 /* MFBaseViewController.m in Sources */,
+				A2686C1F1BA0401A005C9BED /* MFPasswordMController.m in Sources */,
 				A2686BF71B9FEA52005C9BED /* MFPersonModel.m in Sources */,
 				A28B3AC61B96D8F500181B1D /* NSString+Util.m in Sources */,
-				A26680191B9891C500DC2A57 /* MFPersonCreateController.m in Sources */,
 				A2F106381B945BB900E7B020 /* MFUtil.m in Sources */,
-				A2686BD91B9FEA51005C9BED /* MFNoteGroupModel.m in Sources */,
 				A2686BD31B9FEA51005C9BED /* MFHolidayModel.m in Sources */,
 				A274476B1B959EB5006FD7D1 /* MFInterfaceHelper.m in Sources */,
-				A2FF0CE01B8C62F300C520A5 /* MFUserInfoController.m in Sources */,
+				A2686C001BA003F4005C9BED /* MFNoteGroupModel.m in Sources */,
 				A2686BE51B9FEA51005C9BED /* MFIndexModel.m in Sources */,
 				A2686BE21B9FEA51005C9BED /* MFNoteModel.m in Sources */,
 				A2686BFA1B9FEA52005C9BED /* MFUser_TaskModel.m in Sources */,
+				A2686C441BA04236005C9BED /* MFNotifListController.m in Sources */,
+				A2686C1C1BA03AC6005C9BED /* MFUserInfoController.m in Sources */,
 				A2686BDF1B9FEA51005C9BED /* MFUser_NoteGroupModel.m in Sources */,
 				A2686BEE1B9FEA51005C9BED /* MFUserModel.m in Sources */,
 			);

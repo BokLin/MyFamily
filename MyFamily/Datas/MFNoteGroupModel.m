@@ -16,8 +16,8 @@
 @dynamic name;
 @dynamic noteGroupID;
 @dynamic remark;
-@dynamic user_NoteGroupID;
-@dynamic user_note;
-@dynamic userNoteGroup;
+@dynamic user_noteGroupID;
+@dynamic user_notes;
+@dynamic user_noteGroup;
 
 @end

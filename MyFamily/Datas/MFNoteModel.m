@@ -20,6 +20,6 @@
 @dynamic title;
 @dynamic userNoteID;
 @dynamic noteType;
-@dynamic userNote;
+@dynamic user_note;
 
 @end

@@ -44,4 +44,27 @@ typedef enum : NSUInteger {
     MFNotifCycleTypeYear
 } MFNotifCycleType;
 
+/**
+ 任务类型
+ **/
+typedef enum : NSUInteger {
+    MFTaskTypeDefault,
+    MFTaskTypeSystem,
+    MFTaskTypeCustom,
+} MFTaskType;
+
+/**
+ 任务状态
+ **/
+typedef enum : NSUInteger {
+    MFTaskStatusPrepare,//准备
+    MFTaskStatusInProgress,//进行中
+    MFTaskStatusPause,//挂起
+    MFTaskStatusFinish,//完成
+    MFTaskStatusExpired,//过期
+    MFTaskStatusDeleted//删除
+} MFTaskStatus;
+
+
+
 #endif
