@@ -55,16 +55,16 @@
     user.password = @"111111";
     user.nickName = @"管理员";
     user.activity = 10000;
-    user.userID = user.rowID;
+    user.userID = user.x_rowID;
     
     MFPersonModel *person = (MFPersonModel *)[dataHelper insertToTable:kTablePerson];
     person.realName = @"林博";
     person.mobile = @"13881895803";
     person.email = @"bok@linbok.com";
-    person.personID = person.rowID;
+    person.personID = person.x_rowID;
     
     user.person = person;
-    user.personID = person.rowID;
+    user.personID = person.x_rowID;
     
     person.user = user;
     person.userID = user.userID;

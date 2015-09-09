@@ -21,7 +21,7 @@
         NSArray *array = [_data fetcthTable:kTableIndex];
         if (array.count == 0) {
             MFIndexModel *index = (MFIndexModel *)[_data insertToTable:kTableIndex];
-            index.rowID = 1;
+            index.x_rowID = 1;
             [_data setIndexMax:index];
         }else {
             [_data setIndexMax:[array firstObject]];
@@ -56,8 +56,8 @@
     if ([tName isEqualToString:kTableHoliday]) {
         return ++_indexMax.t_holiday;
     }
-    if ([tName isEqualToString:kTableMemo]) {
-        return ++_indexMax.t_memo;
+    if ([tName isEqualToString:kTableNotif]) {
+        return ++_indexMax.t_notif;
     }
     if ([tName isEqualToString:kTableNoteCategory]) {
         return ++_indexMax.t_noteCategory;
@@ -74,8 +74,8 @@
     if ([tName isEqualToString:kTableRelation]) {
         return ++_indexMax.t_relation;
     }
-    if ([tName isEqualToString:kTableUser_Memo]) {
-        return ++_indexMax.t_user_memo;
+    if ([tName isEqualToString:kTableUser_Notif]) {
+        return ++_indexMax.t_user_notif;
     }
     if ([tName isEqualToString:kTableUser_Note]) {
         return ++_indexMax.t_user_note;
@@ -98,14 +98,14 @@
 {
     MFBaseModel *model = [NSEntityDescription insertNewObjectForEntityForName:tName inManagedObjectContext:[self managedObjectContext]];
     int64_t rowID = [self maxIndexInTable:tName];
-    model.rowID = rowID;
+    model.x_rowID = rowID;
     
-    model.createDate = [[NSDate date] timeIntervalSinceReferenceDate];
-    model.updateDate = [[NSDate date] timeIntervalSinceReferenceDate];
-    model.userID_create = [MFRequestHelper shareInstance].user.userID;
-    model.userID_update = [MFRequestHelper shareInstance].user.userID;
-    model.version = [MFUtil appVersion];
-    model.device = [MFUtil device];
+    model.x_createDate = [[NSDate date] timeIntervalSinceReferenceDate];
+    model.x_updateDate = [[NSDate date] timeIntervalSinceReferenceDate];
+    model.x_userID_create = [MFRequestHelper shareInstance].user.userID;
+    model.x_userID_update = [MFRequestHelper shareInstance].user.userID;
+    model.x_version = [MFUtil appVersion];
+    model.x_device = [MFUtil device];
     
     return model;
 }
@@ -131,7 +131,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     
     if (predicate == nil) {
-        predicate = [NSPredicate predicateWithFormat:@"isDelete != 1"];
+        predicate = [NSPredicate predicateWithFormat:@"x_isDelete != 1"];
     }
     
     [request setEntity:[NSEntityDescription entityForName:tName inManagedObjectContext:[self managedObjectContext]]];

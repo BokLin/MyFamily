@@ -16,6 +16,4 @@
 
 + (void)initialHolidays;
 
-+ (void)initialNoteCategorys;
-
 @end

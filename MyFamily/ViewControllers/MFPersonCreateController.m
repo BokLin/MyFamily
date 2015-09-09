@@ -60,7 +60,7 @@
     // 添加Person
     
     MFRelationModel *pRelation = (MFRelationModel *)[[MFDataHelper shareInstance] insertToTable:kTableRelation];
-    pRelation.relationID = pRelation.rowID;
+    pRelation.relationID = pRelation.x_rowID;
     pRelation.relationType = relation;
     pRelation.person_from = [MFRequestHelper shareInstance].person;
     
@@ -70,7 +70,7 @@
     person.email = email;
     person.gender = agenda;
     person.mobile = mobile;
-    person.personID = person.rowID;
+    person.personID = person.x_rowID;
     [person addRelation_tosObject:pRelation];
     
     [[MFRequestHelper shareInstance].person addRelation_fromsObject:pRelation];

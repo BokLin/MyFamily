@@ -2,7 +2,7 @@
 //  MFBaseModel.h
 //  MyFamily
 //
-//  Created by EvenTouch on 15/9/8.
+//  Created by EvenTouch on 15/9/9.
 //  Copyright (c) 2015年 Linbo. All rights reserved.
 //
 
@@ -12,17 +12,18 @@
 
 @interface MFBaseModel : NSManagedObject
 
-@property (nonatomic) NSTimeInterval createDate;
-@property (nonatomic) NSTimeInterval deleteDate;
-@property (nonatomic, retain) NSString * device;
-@property (nonatomic) BOOL invalid;
-@property (nonatomic) BOOL isDefault;
-@property (nonatomic) BOOL isDelete;
-@property (nonatomic) int64_t rowID;
-@property (nonatomic) NSTimeInterval updateDate;
-@property (nonatomic) int64_t userID_create;
-@property (nonatomic) int64_t userID_delete;
-@property (nonatomic) int64_t userID_update;
-@property (nonatomic, retain) NSString * version;
+@property (nonatomic) NSTimeInterval x_createDate;
+@property (nonatomic) NSTimeInterval x_deleteDate;
+@property (nonatomic, retain) NSString * x_device;
+@property (nonatomic) BOOL x_invalid;
+@property (nonatomic) BOOL x_isDefault;
+@property (nonatomic) BOOL x_isDelete;
+@property (nonatomic) int64_t x_rowID;
+@property (nonatomic) NSTimeInterval x_updateDate;
+@property (nonatomic) int64_t x_userID_create;
+@property (nonatomic) int64_t x_userID_delete;
+@property (nonatomic) int64_t x_userID_update;
+@property (nonatomic, retain) NSString * x_version;
+@property (nonatomic, retain) NSString * x_remark;
 
 @end

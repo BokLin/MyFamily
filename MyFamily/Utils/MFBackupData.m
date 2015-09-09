@@ -15,13 +15,13 @@
 + (void)backupAllData
 {
     [self backup:kTableIndex];
-    [self backup:kTableMemo removeAtt:@[@"userMemo"]];
+    [self backup:kTableNotif removeAtt:@[@"userNotif"]];
     [self backup:kTableNote removeAtt:@[@"userNote"]];
     [self backup:kTableNoteGroup removeAtt:@[@"user_note",@"userNoteGroup"]];
-    [self backup:kTablePerson removeAtt:@[@"person_relation_froms",@"person_relation_tos",@"user"]];
+    [self backup:kTablePerson removeAtt:@[@"relation_froms",@"relation_tos",@"user"]];
     [self backup:kTableRelation removeAtt:@[@"person_from",@"person_to"]];
-    [self backup:kTableUser removeAtt:@[@"person",@"user_Memos",@"user_NoteGroups",@"user_Notes"]];
-    [self backup:kTableUser_Memo removeAtt:@[@"memo",@"user"]];
+    [self backup:kTableUser removeAtt:@[@"person",@"user_Notifs",@"user_NoteGroups",@"user_Notes"]];
+    [self backup:kTableUser_Notif removeAtt:@[@"notif",@"user"]];
     [self backup:kTableUser_Note removeAtt:@[@"note",@"noteGroup",@"user"]];
     [self backup:kTableUser_NoteGroup removeAtt:@[@"noteGroup",@"user"]];
     

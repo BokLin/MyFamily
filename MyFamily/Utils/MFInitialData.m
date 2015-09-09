@@ -16,7 +16,6 @@
 {
     [MFInitialData initialCitys];
     [MFInitialData initialHolidays];
-    [MFInitialData initialNoteCategorys];
 }
 
 + (void)initialCitys
@@ -48,7 +47,7 @@
             provinceModel = (MFRegionModel *)[[MFDataHelper shareInstance] insertToTable:kTableRegion];
             
             provinceModel.region_province = province;
-            provinceModel.regionID = provinceModel.rowID;
+            provinceModel.regionID = provinceModel.x_rowID;
             provinceModel.level = 0;
             
         }else {
@@ -63,7 +62,7 @@
                 
                 cityModel.region_province = province;
                 cityModel.region_city = city;
-                cityModel.regionID = cityModel.rowID;
+                cityModel.regionID = cityModel.x_rowID;
                 cityModel.level = 1;
                 
                 cityModel.regionID_uplevel = provinceModel.regionID;
@@ -83,7 +82,7 @@
                     countyModel.region_province = province;
                     countyModel.region_city = city;
                     countyModel.region_county = county;
-                    countyModel.regionID = countyModel.rowID;
+                    countyModel.regionID = countyModel.x_rowID;
                     countyModel.level = 2;
                     
                     countyModel.regionID_uplevel = cityModel.regionID;
@@ -117,27 +116,6 @@
         holiday.holidayID = [dic[@"holidayID"] integerValue];
         holiday.name = dic[@"name"];
         holiday.date = dic[@"date"];
-        
-    }
-    
-    [[MFDataHelper shareInstance] saveContext:kTableHoliday];
-}
-
-+ (void)initialNoteCategorys
-{
-    // 写入note categorys
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"note_categorys" ofType:@"csv"];
-    
-    NSArray *array = [MFUtil readCSV:path];
-    
-    for (int i = 0; i < array.count; i++) {
-        
-        MFNoteCategoryModel *note_category = (MFNoteCategoryModel *)[[MFDataHelper shareInstance] insertToTable:kTableNoteCategory];
-        NSDictionary *dic = array[i];
-        
-        note_category.noteCategoryID = [dic[@"noteCategoryID"] integerValue];
-        note_category.name = dic[@"name"];
-        note_category.remark = dic[@"remark"];
         
     }
     

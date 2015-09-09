@@ -2,57 +2,50 @@
 //  MFUserModel.h
 //  MyFamily
 //
-//  Created by EvenTouch on 15/9/8.
+//  Created by EvenTouch on 15/9/9.
 //  Copyright (c) 2015年 Linbo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+#import "MFBaseModel.h"
 
-@class MFPersonModel, MFUser_MemoModel, MFUser_NoteGroupModel, MFUser_NoteModel;
+@class MFPersonModel, MFUser_MemoModel, MFUser_NoteGroupModel, MFUser_NoteModel, MFUser_TaskModel;
 
-@interface MFUserModel : NSManagedObject
+@interface MFUserModel : MFBaseModel
 
 @property (nonatomic, retain) NSString * account;
 @property (nonatomic) int32_t activity;
-@property (nonatomic) NSTimeInterval createDate;
-@property (nonatomic) NSTimeInterval deleteDate;
-@property (nonatomic, retain) NSString * device;
-@property (nonatomic) BOOL invalid;
-@property (nonatomic) BOOL isDefault;
-@property (nonatomic) BOOL isDelete;
 @property (nonatomic, retain) NSString * nickName;
 @property (nonatomic, retain) NSString * password;
 @property (nonatomic, retain) NSString * password_md5;
 @property (nonatomic) int64_t personID;
-@property (nonatomic) int64_t rowID;
-@property (nonatomic) NSTimeInterval updateDate;
 @property (nonatomic) int64_t userID;
-@property (nonatomic) int64_t userID_create;
-@property (nonatomic) int64_t userID_delete;
-@property (nonatomic) int64_t userID_update;
-@property (nonatomic, retain) NSString * version;
 @property (nonatomic, retain) MFPersonModel *person;
-@property (nonatomic, retain) NSSet *user_Memos;
-@property (nonatomic, retain) NSSet *user_NoteGroups;
-@property (nonatomic, retain) NSSet *user_Notes;
+@property (nonatomic, retain) NSSet *user_notifs;
+@property (nonatomic, retain) NSSet *user_noteGroups;
+@property (nonatomic, retain) NSSet *user_notes;
+@property (nonatomic, retain) NSSet *user_tasks;
 @end
 
 @interface MFUserModel (CoreDataGeneratedAccessors)
 
-- (void)addUser_MemosObject:(MFUser_MemoModel *)value;
-- (void)removeUser_MemosObject:(MFUser_MemoModel *)value;
-- (void)addUser_Memos:(NSSet *)values;
-- (void)removeUser_Memos:(NSSet *)values;
+- (void)addUser_notifsObject:(MFUser_MemoModel *)value;
+- (void)removeUser_notifsObject:(MFUser_MemoModel *)value;
+- (void)addUser_notifs:(NSSet *)values;
+- (void)removeUser_notifs:(NSSet *)values;
 
-- (void)addUser_NoteGroupsObject:(MFUser_NoteGroupModel *)value;
-- (void)removeUser_NoteGroupsObject:(MFUser_NoteGroupModel *)value;
-- (void)addUser_NoteGroups:(NSSet *)values;
-- (void)removeUser_NoteGroups:(NSSet *)values;
+- (void)addUser_noteGroupsObject:(MFUser_NoteGroupModel *)value;
+- (void)removeUser_noteGroupsObject:(MFUser_NoteGroupModel *)value;
+- (void)addUser_noteGroups:(NSSet *)values;
+- (void)removeUser_noteGroups:(NSSet *)values;
 
-- (void)addUser_NotesObject:(MFUser_NoteModel *)value;
-- (void)removeUser_NotesObject:(MFUser_NoteModel *)value;
-- (void)addUser_Notes:(NSSet *)values;
-- (void)removeUser_Notes:(NSSet *)values;
+- (void)addUser_notesObject:(MFUser_NoteModel *)value;
+- (void)removeUser_notesObject:(MFUser_NoteModel *)value;
+- (void)addUser_notes:(NSSet *)values;
+- (void)removeUser_notes:(NSSet *)values;
+
+- (void)addUser_tasksObject:(MFUser_TaskModel *)value;
+- (void)removeUser_tasksObject:(MFUser_TaskModel *)value;
+- (void)addUser_tasks:(NSSet *)values;
+- (void)removeUser_tasks:(NSSet *)values;
 
 @end
