@@ -46,6 +46,7 @@
         <attribute name="t_relation" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="t_task" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="t_user" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="t_user_message" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="t_user_note" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="t_user_noteGroup" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="t_user_notif" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
@@ -83,6 +84,7 @@
         <attribute name="x_userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="x_userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="x_version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="user_message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User_MessageTable" inverseName="message" inverseEntity="User_MessageTable" syncable="YES"/>
     </entity>
     <entity name="NoteGroupTable" representedClassName="MFNoteGroupModel" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
@@ -270,6 +272,26 @@
         <attribute name="x_version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
         <relationship name="user_task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User_TaskTable" inverseName="task" inverseEntity="User_TaskTable" syncable="YES"/>
     </entity>
+    <entity name="User_MessageTable" representedClassName="MFUser_MessageModel" syncable="YES">
+        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="x_createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="x_deleteDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="x_device" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <attribute name="x_invalid" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="x_isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="x_isDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="x_remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="x_rowID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="x_updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="x_userID_create" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="x_userID_delete" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="x_userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="x_version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MessageTable" inverseName="user_message" inverseEntity="MessageTable" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTable" inverseName="user_messages" inverseEntity="UserTable" syncable="YES"/>
+    </entity>
     <entity name="User_NoteGroupTable" representedClassName="MFUser_NoteGroupModel" syncable="YES">
         <attribute name="noteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="user_noteGroupID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
@@ -374,6 +396,7 @@
         <attribute name="x_userID_update" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="x_version" optional="YES" attributeType="String" minValueString="0" syncable="YES"/>
         <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonTable" inverseName="user" inverseEntity="PersonTable" syncable="YES"/>
+        <relationship name="user_messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_MessageTable" inverseName="user" inverseEntity="User_MessageTable" syncable="YES"/>
         <relationship name="user_noteGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_NoteGroupTable" inverseName="user" inverseEntity="User_NoteGroupTable" syncable="YES"/>
         <relationship name="user_notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_NoteTable" inverseName="user" inverseEntity="User_NoteTable" syncable="YES"/>
         <relationship name="user_notifs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User_NotifTable" inverseName="user" inverseEntity="User_NotifTable" syncable="YES"/>
@@ -382,19 +405,20 @@
     <elements>
         <element name="BaseTable" positionX="-767" positionY="-36" width="128" height="238"/>
         <element name="HolidayTable" positionX="-767" positionY="234" width="128" height="298"/>
-        <element name="IndexTable" positionX="-578" positionY="-45" width="128" height="463"/>
-        <element name="NotifTable" positionX="205" positionY="1197" width="128" height="418"/>
-        <element name="MessageTable" positionX="-963" positionY="-36" width="128" height="313"/>
+        <element name="IndexTable" positionX="-578" positionY="-45" width="128" height="478"/>
+        <element name="MessageTable" positionX="-963" positionY="-36" width="128" height="328"/>
         <element name="NoteGroupTable" positionX="198" positionY="828" width="128" height="328"/>
         <element name="NoteTable" positionX="187" positionY="404" width="128" height="373"/>
+        <element name="NotifTable" positionX="205" positionY="1197" width="128" height="418"/>
         <element name="PersonTable" positionX="-110" positionY="-247" width="128" height="718"/>
         <element name="RegionTable" positionX="-342" positionY="-36" width="128" height="358"/>
         <element name="RelationTable" positionX="117" positionY="-27" width="128" height="328"/>
-        <element name="User_NotifTable" positionX="-119" positionY="1350" width="128" height="313"/>
+        <element name="TaskTable" positionX="205" positionY="1676" width="128" height="358"/>
         <element name="User_NoteGroupTable" positionX="-137" positionY="953" width="128" height="313"/>
         <element name="User_NoteTable" positionX="-126" positionY="548" width="128" height="343"/>
-        <element name="UserTable" positionX="-477" positionY="783" width="128" height="418"/>
-        <element name="TaskTable" positionX="205" positionY="1676" width="128" height="358"/>
+        <element name="User_NotifTable" positionX="-119" positionY="1350" width="128" height="313"/>
         <element name="User_TaskTable" positionX="-108" positionY="1712" width="128" height="313"/>
+        <element name="UserTable" positionX="-477" positionY="783" width="128" height="433"/>
+        <element name="User_MessageTable" positionX="-603" positionY="126" width="128" height="315"/>
     </elements>
 </model>

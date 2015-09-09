@@ -8,13 +8,15 @@
 
 #import "MFBaseModel.h"
 
+@class MFUser_MessageModel;
 
 @interface MFMessageModel : MFBaseModel
 
-@property (nonatomic) int64_t messageID;
-@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * content;
-@property (nonatomic) int32_t messageType;
 @property (nonatomic) BOOL isRead;
+@property (nonatomic) int64_t messageID;
+@property (nonatomic) int32_t messageType;
+@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) MFUser_MessageModel *user_message;
 
 @end

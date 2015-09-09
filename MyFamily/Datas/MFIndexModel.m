@@ -26,5 +26,6 @@
 @dynamic t_message;
 @dynamic t_user_task;
 @dynamic t_task;
+@dynamic t_user_message;
 
 @end

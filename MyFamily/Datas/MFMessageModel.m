@@ -7,14 +7,16 @@
 //
 
 #import "MFMessageModel.h"
+#import "MFUser_MessageModel.h"
 
 
 @implementation MFMessageModel
 
-@dynamic messageID;
-@dynamic title;
 @dynamic content;
-@dynamic messageType;
 @dynamic isRead;
+@dynamic messageID;
+@dynamic messageType;
+@dynamic title;
+@dynamic user_message;
 
 @end

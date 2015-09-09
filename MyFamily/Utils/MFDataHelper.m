@@ -56,6 +56,9 @@
     if ([tName isEqualToString:kTableHoliday]) {
         return ++_indexMax.t_holiday;
     }
+    if ([tName isEqualToString:kTableMessage]) {
+        return ++_indexMax.t_message;
+    }
     if ([tName isEqualToString:kTableNoteGroup]) {
         return ++_indexMax.t_noteGroup;
     }
@@ -72,6 +75,9 @@
         return ++_indexMax.t_relation;
     }
     if ([tName isEqualToString:kTableTask]) {
+        return ++_indexMax.t_task;
+    }
+    if ([tName isEqualToString:kTableUser_Message]) {
         return ++_indexMax.t_task;
     }
     if ([tName isEqualToString:kTableUser_Notif]) {

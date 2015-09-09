@@ -8,7 +8,7 @@
 
 #import "MFBaseModel.h"
 
-@class MFPersonModel, MFUser_MemoModel, MFUser_NoteGroupModel, MFUser_NoteModel, MFUser_TaskModel;
+@class MFPersonModel, MFUser_MessageModel, MFUser_NoteGroupModel, MFUser_NoteModel, MFUser_NotifModel, MFUser_TaskModel;
 
 @interface MFUserModel : MFBaseModel
 
@@ -20,18 +20,14 @@
 @property (nonatomic) int64_t personID;
 @property (nonatomic) int64_t userID;
 @property (nonatomic, retain) MFPersonModel *person;
-@property (nonatomic, retain) NSSet *user_notifs;
 @property (nonatomic, retain) NSSet *user_noteGroups;
 @property (nonatomic, retain) NSSet *user_notes;
+@property (nonatomic, retain) NSSet *user_notifs;
 @property (nonatomic, retain) NSSet *user_tasks;
+@property (nonatomic, retain) NSSet *user_messages;
 @end
 
 @interface MFUserModel (CoreDataGeneratedAccessors)
-
-- (void)addUser_notifsObject:(MFUser_MemoModel *)value;
-- (void)removeUser_notifsObject:(MFUser_MemoModel *)value;
-- (void)addUser_notifs:(NSSet *)values;
-- (void)removeUser_notifs:(NSSet *)values;
 
 - (void)addUser_noteGroupsObject:(MFUser_NoteGroupModel *)value;
 - (void)removeUser_noteGroupsObject:(MFUser_NoteGroupModel *)value;
@@ -43,9 +39,19 @@
 - (void)addUser_notes:(NSSet *)values;
 - (void)removeUser_notes:(NSSet *)values;
 
+- (void)addUser_notifsObject:(MFUser_NotifModel *)value;
+- (void)removeUser_notifsObject:(MFUser_NotifModel *)value;
+- (void)addUser_notifs:(NSSet *)values;
+- (void)removeUser_notifs:(NSSet *)values;
+
 - (void)addUser_tasksObject:(MFUser_TaskModel *)value;
 - (void)removeUser_tasksObject:(MFUser_TaskModel *)value;
 - (void)addUser_tasks:(NSSet *)values;
 - (void)removeUser_tasks:(NSSet *)values;
+
+- (void)addUser_messagesObject:(MFUser_MessageModel *)value;
+- (void)removeUser_messagesObject:(MFUser_MessageModel *)value;
+- (void)addUser_messages:(NSSet *)values;
+- (void)removeUser_messages:(NSSet *)values;
 
 @end

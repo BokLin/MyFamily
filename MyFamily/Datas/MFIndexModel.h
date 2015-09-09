@@ -26,5 +26,6 @@
 @property (nonatomic) int64_t t_message;
 @property (nonatomic) int64_t t_user_task;
 @property (nonatomic) int64_t t_task;
+@property (nonatomic) int64_t t_user_message;
 
 @end
