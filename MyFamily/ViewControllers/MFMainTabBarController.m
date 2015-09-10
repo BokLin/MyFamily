@@ -28,6 +28,19 @@
         
         NSString *imgStr1 = [imageArr1 objectAtIndex:i];
         item.selectedImage = [[UIImage imageNamed:imgStr1] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+        if (i == 1) {
+            item.badgeValue = @"★";
+        }
+        if (i == 2) {
+            item.badgeValue = @"2";
+        }
+        if (i == 3) {
+            item.badgeValue = nil;
+        }
+        if (i == 4) {
+            item.badgeValue = @" ";
+        }
     }
 }
 

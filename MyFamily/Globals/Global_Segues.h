@@ -13,4 +13,6 @@
 
 #define kSegueAnyToPersonCreate @"SegueAnyToPersonCreate"
 
+#define kSegueAnyToUserInfo     @"SegueAnyToUserInfo"
+
 #endif

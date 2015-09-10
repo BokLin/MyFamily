@@ -426,13 +426,13 @@
         <element name="NotifTable" positionX="205" positionY="1197" width="128" height="418"/>
         <element name="PersonTable" positionX="-110" positionY="-247" width="128" height="735"/>
         <element name="RegionTable" positionX="-342" positionY="-36" width="128" height="375"/>
-        <element name="RelationTable" positionX="117" positionY="-27" width="128" height="345"/>
-        <element name="TaskTable" positionX="205" positionY="1676" width="128" height="373"/>
+        <element name="RelationTable" positionX="180" positionY="-36" width="128" height="345"/>
+        <element name="TaskTable" positionX="205" positionY="1638" width="128" height="373"/>
         <element name="User_MessageTable" positionX="-99" positionY="2169" width="128" height="330"/>
         <element name="User_NoteGroupTable" positionX="-137" positionY="953" width="128" height="330"/>
         <element name="User_NoteTable" positionX="-126" positionY="548" width="128" height="360"/>
         <element name="User_NotifTable" positionX="-119" positionY="1350" width="128" height="330"/>
-        <element name="User_TaskTable" positionX="-108" positionY="1712" width="128" height="330"/>
+        <element name="User_TaskTable" positionX="-108" positionY="1740" width="128" height="330"/>
         <element name="UserTable" positionX="-477" positionY="783" width="128" height="450"/>
     </elements>
 </model>
