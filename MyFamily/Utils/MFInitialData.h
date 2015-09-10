@@ -12,7 +12,7 @@
 
 + (void)initialTables;
 
-+ (void)initialCitys;
++ (void)initialRegions;
 
 + (void)initialHolidays;
 

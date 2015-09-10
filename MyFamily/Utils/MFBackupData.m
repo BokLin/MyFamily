@@ -15,13 +15,13 @@
 + (void)backupAllData
 {
     [self backup:kTableIndex];
-    [self backup:kTableMessage removeAtt:@[@"user_message"]];
-    [self backup:kTableNotif removeAtt:@[@"user_notif"]];
-    [self backup:kTableNote removeAtt:@[@"user_note"]];
-    [self backup:kTableNoteGroup removeAtt:@[@"user_notes",@"user_noteGroup"]];
+    [self backup:kTableMessage removeAtt:@[@"user_messages"]];
+    [self backup:kTableNotif removeAtt:@[@"user_notifs"]];
+    [self backup:kTableNote removeAtt:@[@"user_notes"]];
+    [self backup:kTableNoteGroup removeAtt:@[@"user_notes",@"user_noteGroups"]];
     [self backup:kTablePerson removeAtt:@[@"relation_froms",@"relation_tos",@"user"]];
     [self backup:kTableRelation removeAtt:@[@"person_from",@"person_to"]];
-    [self backup:kTableTask removeAtt:@[@"user_task"]];
+    [self backup:kTableTask removeAtt:@[@"user_tasks"]];
     [self backup:kTableUser removeAtt:@[@"person",@"user_notifs",@"user_noteGroups",@"user_notes",@"user_tasks",@"user_messages"]];
     [self backup:kTableUser_Message removeAtt:@[@"message",@"user"]];
     [self backup:kTableUser_Note removeAtt:@[@"note",@"noteGroup",@"user"]];
@@ -107,6 +107,7 @@
     NSURL *pathUrl = [dirUrl URLByAppendingPathComponent:pathName];
     
     [MFUtil writeCSV:mutArr pathUrl:pathUrl];
+
 }
 
 @end

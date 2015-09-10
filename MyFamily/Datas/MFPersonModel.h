@@ -2,21 +2,23 @@
 //  MFPersonModel.h
 //  MyFamily
 //
-//  Created by EvenTouch on 15/9/9.
+//  Created by EvenTouch on 15/9/10.
 //  Copyright (c) 2015年 Linbo. All rights reserved.
 //
 
-#import "MFBaseModel.h"
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @class MFRelationModel, MFUserModel;
 
-@interface MFPersonModel : MFBaseModel
+@interface MFPersonModel : NSManagedObject
 
 @property (nonatomic, retain) NSString * birthday;
 @property (nonatomic) BOOL birthday_isLunar;
 @property (nonatomic, retain) NSString * blog;
 @property (nonatomic, retain) NSString * bloodType;
 @property (nonatomic, retain) NSString * company;
+@property (nonatomic, retain) NSString * deathDate;
 @property (nonatomic) BOOL deathDate_isLunar;
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic) int32_t gender;
@@ -40,7 +42,20 @@
 @property (nonatomic, retain) NSString * weChat;
 @property (nonatomic, retain) NSString * weibo;
 @property (nonatomic) float weight_KG;
-@property (nonatomic, retain) NSString * deathDate;
+@property (nonatomic) NSTimeInterval x_createDate;
+@property (nonatomic) NSTimeInterval x_deleteDate;
+@property (nonatomic, retain) NSString * x_device;
+@property (nonatomic) BOOL x_invalid;
+@property (nonatomic) BOOL x_isDefault;
+@property (nonatomic) BOOL x_isDelete;
+@property (nonatomic, retain) NSString * x_remark;
+@property (nonatomic) int64_t x_rowID;
+@property (nonatomic) NSTimeInterval x_updateDate;
+@property (nonatomic) int64_t x_userID_create;
+@property (nonatomic) int64_t x_userID_delete;
+@property (nonatomic) int64_t x_userID_update;
+@property (nonatomic, retain) NSString * x_version;
+@property (nonatomic) BOOL x_isSync;
 @property (nonatomic, retain) NSSet *relation_froms;
 @property (nonatomic, retain) NSSet *relation_tos;
 @property (nonatomic, retain) MFUserModel *user;

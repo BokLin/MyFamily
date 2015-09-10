@@ -14,11 +14,25 @@
 
 + (void)initialTables
 {
-    [MFInitialData initialCitys];
+    [MFInitialData initialRegions];
     [MFInitialData initialHolidays];
+    
+    [[MFDataHelper shareInstance] insertToTable:kTableMessage];
+    [[MFDataHelper shareInstance] insertToTable:kTableNote];
+    [[MFDataHelper shareInstance] insertToTable:kTableNoteGroup];
+    [[MFDataHelper shareInstance] insertToTable:kTableNotif];
+    [[MFDataHelper shareInstance] insertToTable:kTableRelation];
+    [[MFDataHelper shareInstance] insertToTable:kTableTask];
+    [[MFDataHelper shareInstance] insertToTable:kTableUser_Message];
+    [[MFDataHelper shareInstance] insertToTable:kTableUser_Note];
+    [[MFDataHelper shareInstance] insertToTable:kTableUser_NoteGroup];
+    [[MFDataHelper shareInstance] insertToTable:kTableUser_Notif];
+    [[MFDataHelper shareInstance] insertToTable:kTableUser_Task];
+
+    [[MFDataHelper shareInstance] saveContext];
 }
 
-+ (void)initialCitys
++ (void)initialRegions
 {
     // 写入Region
     NSString *path = [[NSBundle mainBundle] pathForResource:@"regions" ofType:@"csv"];
