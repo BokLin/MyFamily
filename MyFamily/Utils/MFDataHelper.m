@@ -105,6 +105,8 @@
 
 - (MFBaseModel *)insertToTable:(NSString *)tName
 {
+    [MFRequestHelper shareInstance].dataChangedCount += 1;
+    
     MFBaseModel *model = [NSEntityDescription insertNewObjectForEntityForName:tName inManagedObjectContext:[self managedObjectContext]];
     int64_t rowID = [self maxIndexInTable:tName];
     model.x_rowID = rowID;
@@ -232,7 +234,7 @@
 }
 
 - (void)saveContext:(NSString *)currectObject{
-
+    
     NSLog(@"save %@",currectObject);
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {

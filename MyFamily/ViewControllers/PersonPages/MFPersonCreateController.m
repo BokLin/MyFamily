@@ -56,13 +56,13 @@
         return;
     }
     
-   
     // 添加Person
     
     MFRelationModel *pRelation = (MFRelationModel *)[[MFDataHelper shareInstance] insertToTable:kTableRelation];
     pRelation.relationID = pRelation.x_rowID;
     pRelation.relationType = relation;
     pRelation.person_from = [MFRequestHelper shareInstance].person;
+    pRelation.personID_from = [MFRequestHelper shareInstance].person.personID;
     
     MFPersonModel *person = (MFPersonModel *)[[MFDataHelper shareInstance] insertToTable:kTablePerson];
     person.realName = name;
@@ -72,10 +72,11 @@
     person.mobile = mobile;
     person.personID = person.x_rowID;
     [person addRelation_tosObject:pRelation];
-    
+
     [[MFRequestHelper shareInstance].person addRelation_fromsObject:pRelation];
     
     pRelation.person_to = person;
+    pRelation.personID_to = person.personID;
 
     [[MFDataHelper shareInstance] saveContext:kTableRelation];
     

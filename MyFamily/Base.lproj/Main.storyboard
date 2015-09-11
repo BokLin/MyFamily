@@ -106,10 +106,10 @@
                                 <exclude reference="H27-U8-aKg"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="H4C-nN-LQn"/>
                                 <exclude reference="5Dc-Sj-Lnz"/>
                                 <exclude reference="nYp-8K-8Fs"/>
                                 <exclude reference="tvC-8j-puk"/>
-                                <exclude reference="H4C-nN-LQn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -117,10 +117,10 @@
                                 <include reference="H27-U8-aKg"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="H4C-nN-LQn"/>
                                 <include reference="5Dc-Sj-Lnz"/>
                                 <include reference="nYp-8K-8Fs"/>
                                 <include reference="tvC-8j-puk"/>
-                                <include reference="H4C-nN-LQn"/>
                             </mask>
                         </variation>
                     </view>

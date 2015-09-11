@@ -413,7 +413,14 @@
             [content appendString:@","];
         }
         
-        [content appendString:key];
+        // 逗号和回车都替换
+
+        NSString *key1 = [key stringByReplacingOccurrencesOfString:@"&#32" withString:@"&#_32"];
+        NSString *key2 = [key1 stringByReplacingOccurrencesOfString:@"&#10" withString:@"&#_10"];
+        NSString *key3 = [key2 stringByReplacingOccurrencesOfString:@"," withString:@"&#32"];
+        NSString *key4 = [key3 stringByReplacingOccurrencesOfString:@"\n" withString:@"&#10"];
+        
+        [content appendString:key4];
         
         if (i == keys.count-1) {
             [content appendString:@"\n"];
@@ -430,11 +437,17 @@
             if (i != 0) {
                 [content appendString:@","];
             }
-            if ([[keys class] isSubclassOfClass:[NSSet class]]) {
-                NSLog(@"12321312312312321");
-            }
+            
+            // 逗号和回车都替换
+            NSString *value0 = [value description];
+            
+            NSString *value1 = [value0 stringByReplacingOccurrencesOfString:@"&#32" withString:@"&#_32"];
+            NSString *value2 = [value1 stringByReplacingOccurrencesOfString:@"&#10" withString:@"&#_10"];
+            NSString *value3 = [value2 stringByReplacingOccurrencesOfString:@"," withString:@"&#32"];
+            NSString *value4 = [value3 stringByReplacingOccurrencesOfString:@"\n" withString:@"&#10"];
+            
             if (value != nil) {
-                [content appendString:[value description]];
+                [content appendString:value4];
             }
 
             if (i == keys.count-1 && k != data.count-1) {

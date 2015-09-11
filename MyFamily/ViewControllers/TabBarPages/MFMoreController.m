@@ -25,7 +25,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self setUpTableView];
 }
 
 - (void)setUpTableView
@@ -37,11 +36,18 @@
     
     NSArray *key2 = @[@"切换账号",@"保存数据"];
     
-    NSArray *value2 = @[@"",@"20"];
+    NSString *k21 = @"";
+    if ([MFRequestHelper shareInstance].dataChangedCount > 0) {
+        k21 = [NSString stringWithFormat:@"%ld",[MFRequestHelper shareInstance].dataChangedCount];
+    }
+    
+    NSArray *value2 = @[@"",k21];
     
     _keySource = @[key1,key2];
     
     _valueSouce = @[value1,value2];
+    
+    [_tableView reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -50,6 +56,15 @@
     
     self.tabBarController.title = @"更多";
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self setUpTableView];
+
 }
 
 #pragma mark - Table view data source
@@ -116,7 +131,21 @@
             }
         }
             break;
-            
+        
+        case 1:
+        {
+            switch (indexPath.row) {
+                case 0:
+                    
+                    break;
+                case 1:
+                    [MFBackupData backupAllData];
+                    [self setUpTableView];
+                    break;
+                default:
+                    break;
+            }
+        }
         default:
             break;
     }

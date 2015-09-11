@@ -33,10 +33,7 @@
     
     [self setDataSource1];
  
-    
-    [MFBackupData backupAllData];
-    
-}
+    }
 
 - (void)setDataSource1
 {

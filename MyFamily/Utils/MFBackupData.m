@@ -28,6 +28,9 @@
     [self backup:kTableUser_NoteGroup removeAtt:@[@"noteGroup",@"user"]];
     [self backup:kTableUser_Notif removeAtt:@[@"notif",@"user"]];
     [self backup:kTableUser_Task removeAtt:@[@"task",@"user"]];
+    
+    [MFRequestHelper shareInstance].dataChangedCount = 0;
+
 }
 
 + (void)backup:(NSString *)tName

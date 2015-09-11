@@ -13,6 +13,7 @@
 
 @interface MFRequestHelper : NSObject
 
+@property (nonatomic) NSInteger dataChangedCount;
 
 + (MFRequestHelper *)shareInstance;
 
