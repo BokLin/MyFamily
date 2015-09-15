@@ -24,6 +24,7 @@
 		A2686C441BA04236005C9BED /* MFNotifListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C3E1BA04236005C9BED /* MFNotifListController.m */; };
 		A2686C451BA04236005C9BED /* MFTaskListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686C401BA04236005C9BED /* MFTaskListController.m */; };
 		A268CEA41B903E9D00316CBB /* MFRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A268CEA31B903E9D00316CBB /* MFRequestHelper.m */; };
+		A2690E051BA818A00068E94C /* MFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2690E041BA818A00068E94C /* MFTableViewCell.m */; };
 		A26C336A1B7B2AC00065E103 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A26C33691B7B2AC00065E103 /* main.m */; };
 		A26C336D1B7B2AC00065E103 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A26C336C1B7B2AC00065E103 /* AppDelegate.m */; };
 		A26C33701B7B2AC00065E103 /* MyFamily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A26C336E1B7B2AC00065E103 /* MyFamily.xcdatamodeld */; };
@@ -53,6 +54,9 @@
 		A2B7F5861BA164120062D64A /* MFHolidayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5851BA164120062D64A /* MFHolidayModel.m */; };
 		A2B7F5891BA164120062D64A /* MFNoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5881BA164120062D64A /* MFNoteGroupModel.m */; };
 		A2B7F58C1BA164130062D64A /* MFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F58B1BA164130062D64A /* MFNoteModel.m */; };
+		A2CBF1CE1BA6A5BA0061AF61 /* MFCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBF1CD1BA6A5BA0061AF61 /* MFCellModel.m */; };
+		A2CBF1D11BA6B1DB0061AF61 /* MFBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBF1D01BA6B1DB0061AF61 /* MFBaseTableViewController.m */; };
+		A2CBF1D41BA6B2660061AF61 /* MFPersonEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBF1D31BA6B2660061AF61 /* MFPersonEditController.m */; };
 		A2F106351B94478100E7B020 /* MFDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F106341B94478100E7B020 /* MFDataHelper.m */; };
 		A2F106381B945BB900E7B020 /* MFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F106371B945BB900E7B020 /* MFUtil.m */; };
 		A2FF0CE31B8C632B00C520A5 /* MFMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF0CE21B8C632B00C520A5 /* MFMainTabBarController.m */; };
@@ -97,6 +101,8 @@
 		A268CE6E1B902D7E00316CBB /* Global_Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_Colors.h; sourceTree = "<group>"; };
 		A268CEA21B903E9D00316CBB /* MFRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRequestHelper.h; sourceTree = "<group>"; };
 		A268CEA31B903E9D00316CBB /* MFRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRequestHelper.m; sourceTree = "<group>"; };
+		A2690E031BA818A00068E94C /* MFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTableViewCell.h; sourceTree = "<group>"; };
+		A2690E041BA818A00068E94C /* MFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTableViewCell.m; sourceTree = "<group>"; };
 		A26C33641B7B2AC00065E103 /* MyFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26C33681B7B2AC00065E103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26C33691B7B2AC00065E103 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -152,6 +158,12 @@
 		A2B7F5881BA164120062D64A /* MFNoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteGroupModel.m; sourceTree = "<group>"; };
 		A2B7F58A1BA164130062D64A /* MFNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteModel.h; sourceTree = "<group>"; };
 		A2B7F58B1BA164130062D64A /* MFNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteModel.m; sourceTree = "<group>"; };
+		A2CBF1CC1BA6A5BA0061AF61 /* MFCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCellModel.h; sourceTree = "<group>"; };
+		A2CBF1CD1BA6A5BA0061AF61 /* MFCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCellModel.m; sourceTree = "<group>"; };
+		A2CBF1CF1BA6B1DB0061AF61 /* MFBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseTableViewController.h; sourceTree = "<group>"; };
+		A2CBF1D01BA6B1DB0061AF61 /* MFBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseTableViewController.m; sourceTree = "<group>"; };
+		A2CBF1D21BA6B2660061AF61 /* MFPersonEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonEditController.h; sourceTree = "<group>"; };
+		A2CBF1D31BA6B2660061AF61 /* MFPersonEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonEditController.m; sourceTree = "<group>"; };
 		A2F106331B94478100E7B020 /* MFDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFDataHelper.h; sourceTree = "<group>"; };
 		A2F106341B94478100E7B020 /* MFDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDataHelper.m; sourceTree = "<group>"; };
 		A2F106361B945BB900E7B020 /* MFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtil.h; sourceTree = "<group>"; };
@@ -217,6 +229,8 @@
 				A2686C151BA03AC6005C9BED /* MFPersonCreateController.m */,
 				A2686C161BA03AC6005C9BED /* MFPersonDetailController.h */,
 				A2686C171BA03AC6005C9BED /* MFPersonDetailController.m */,
+				A2CBF1D21BA6B2660061AF61 /* MFPersonEditController.h */,
+				A2CBF1D31BA6B2660061AF61 /* MFPersonEditController.m */,
 				A2686C181BA03AC6005C9BED /* MFUserInfoController.h */,
 				A2686C191BA03AC6005C9BED /* MFUserInfoController.m */,
 			);
@@ -273,8 +287,8 @@
 				A26C33901B7B2B410065E103 /* Globals */,
 				A26C33911B7B2B410065E103 /* ThirdPartys */,
 				A26C33921B7B2B410065E103 /* Utils */,
-				A26C33931B7B2B410065E103 /* ViewControllers */,
 				A26C33941B7B2B410065E103 /* Views */,
+				A26C33931B7B2B410065E103 /* ViewControllers */,
 				A26C336B1B7B2AC00065E103 /* AppDelegate.h */,
 				A26C336C1B7B2AC00065E103 /* AppDelegate.m */,
 				A26C33741B7B2AC00065E103 /* Main.storyboard */,
@@ -346,6 +360,8 @@
 				A2FF0CE21B8C632B00C520A5 /* MFMainTabBarController.m */,
 				A2199F7C1B8475830062A750 /* MFBaseViewController.h */,
 				A2199F7D1B8475830062A750 /* MFBaseViewController.m */,
+				A2CBF1CF1BA6B1DB0061AF61 /* MFBaseTableViewController.h */,
+				A2CBF1D01BA6B1DB0061AF61 /* MFBaseTableViewController.m */,
 				A2686C361BA04236005C9BED /* TabBarPages */,
 				A2686C201BA04080005C9BED /* NotePages */,
 				A2686C131BA03A3A005C9BED /* PersonPages */,
@@ -412,6 +428,8 @@
 		A26C33AE1B7B4ABF0065E103 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A2CBF1CC1BA6A5BA0061AF61 /* MFCellModel.h */,
+				A2CBF1CD1BA6A5BA0061AF61 /* MFCellModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,6 +439,8 @@
 			children = (
 				A2FF0CE81B8C79D000C520A5 /* MFContactCell.h */,
 				A2FF0CE91B8C79D000C520A5 /* MFContactCell.m */,
+				A2690E031BA818A00068E94C /* MFTableViewCell.h */,
+				A2690E041BA818A00068E94C /* MFTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -498,17 +518,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2690E051BA818A00068E94C /* MFTableViewCell.m in Sources */,
 				A2B7F5621BA164110062D64A /* MFMessageModel.m in Sources */,
 				A2B7F57A1BA164120062D64A /* MFTaskModel.m in Sources */,
 				A2B7F55C1BA164100062D64A /* MFUser_NoteModel.m in Sources */,
 				A2686C351BA041E3005C9BED /* MFTaskDetailController.m in Sources */,
 				A2686C1A1BA03AC6005C9BED /* MFPersonCreateController.m in Sources */,
 				A2686C421BA04236005C9BED /* MFMessageListController.m in Sources */,
+				A2CBF1CE1BA6A5BA0061AF61 /* MFCellModel.m in Sources */,
 				A2B7F56E1BA164120062D64A /* MFBaseModel.m in Sources */,
 				A2B7F58C1BA164130062D64A /* MFNoteModel.m in Sources */,
 				A2686C411BA04236005C9BED /* MFContactListController.m in Sources */,
 				A2B7F5891BA164120062D64A /* MFNoteGroupModel.m in Sources */,
 				A2901CF11B9D7A2F00D92129 /* NSObject+Util.m in Sources */,
+				A2CBF1D11BA6B1DB0061AF61 /* MFBaseTableViewController.m in Sources */,
 				A2B7F5711BA164120062D64A /* MFNotifModel.m in Sources */,
 				A2B7F5801BA164120062D64A /* MFUser_TaskModel.m in Sources */,
 				A2901CEE1B9D737A00D92129 /* MFBackupData.m in Sources */,
@@ -519,6 +542,7 @@
 				A2F106351B94478100E7B020 /* MFDataHelper.m in Sources */,
 				A2686C2C1BA04187005C9BED /* MFNotifDetailController.m in Sources */,
 				A2B7F5831BA164120062D64A /* MFUserModel.m in Sources */,
+				A2CBF1D41BA6B2660061AF61 /* MFPersonEditController.m in Sources */,
 				A2B7F5681BA164110062D64A /* MFUser_MessageModel.m in Sources */,
 				A26C336D1B7B2AC00065E103 /* AppDelegate.m in Sources */,
 				A26C336A1B7B2AC00065E103 /* main.m in Sources */,

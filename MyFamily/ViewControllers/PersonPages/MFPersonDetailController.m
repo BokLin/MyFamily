@@ -8,6 +8,8 @@
 
 #import "MFPersonDetailController.h"
 
+#import "MFPersonEditController.h"
+
 @interface MFPersonDetailController ()
 {
     NSArray *_keySource;
@@ -22,7 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [rightButton addTarget:self action:@selector(rightBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+    
+    
     [self setPersonData];
+    
+    
+}
+
+- (void)rightBarButtonAction:(id)sender
+{
+    
+    [self performSegueWithIdentifier:kSegueAnyToPersonEdit sender:self];
 }
 
 - (void)setPersonData
@@ -142,6 +158,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:kSegueAnyToPersonEdit]) {
+        
+        MFPersonEditController *vc = (MFPersonEditController *)segue.destinationViewController;
+        vc.person = self.person;
+    }
 }
 
 

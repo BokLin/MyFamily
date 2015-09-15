@@ -23,6 +23,9 @@
 #import "MFUserModel.h"
 #import "MFIndexModel.h"
 
+#import "MFCellModel.h"
+#import "MFTableViewCell.h"
+
 #import "Global_Segues.h"
 #import "Global_Texts.h"
 #import "Global_Colors.h"

@@ -6,11 +6,9 @@
 //  Copyright (c) 2015年 Linbo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MFBaseTableViewController.h"
 
-#import "Globals.h"
-
-@interface MFPersonDetailController : UITableViewController
+@interface MFPersonDetailController : MFBaseTableViewController
 
 @property (nonatomic)MFPersonModel *person;
 

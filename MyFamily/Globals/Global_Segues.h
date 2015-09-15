@@ -15,4 +15,6 @@
 
 #define kSegueAnyToUserInfo     @"SegueAnyToUserInfo"
 
+#define kSegueAnyToPersonEdit   @"SegueAnyToPersonEdit"
+
 #endif
