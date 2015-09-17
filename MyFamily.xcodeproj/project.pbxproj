@@ -31,6 +31,7 @@
 		A26C33761B7B2AC00065E103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26C33741B7B2AC00065E103 /* Main.storyboard */; };
 		A26C33781B7B2AC00065E103 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26C33771B7B2AC00065E103 /* Images.xcassets */; };
 		A26C337B1B7B2AC00065E103 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26C33791B7B2AC00065E103 /* LaunchScreen.xib */; };
+		A27089271BA970F70082A15E /* MFSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = A27089261BA970F70082A15E /* MFSelectView.m */; };
 		A274476B1B959EB5006FD7D1 /* MFInterfaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A274476A1B959EB5006FD7D1 /* MFInterfaceHelper.m */; };
 		A27447A41B95BFC0006FD7D1 /* regions.csv in Resources */ = {isa = PBXBuildFile; fileRef = A27447A21B95BFC0006FD7D1 /* regions.csv */; };
 		A28B3AC61B96D8F500181B1D /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B3AC51B96D8F500181B1D /* NSString+Util.m */; };
@@ -112,6 +113,8 @@
 		A26C33751B7B2AC00065E103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A26C33771B7B2AC00065E103 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A26C337A1B7B2AC00065E103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A27089251BA970F70082A15E /* MFSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSelectView.h; sourceTree = "<group>"; };
+		A27089261BA970F70082A15E /* MFSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSelectView.m; sourceTree = "<group>"; };
 		A27447691B959EB5006FD7D1 /* MFInterfaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFInterfaceHelper.h; sourceTree = "<group>"; };
 		A274476A1B959EB5006FD7D1 /* MFInterfaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFInterfaceHelper.m; sourceTree = "<group>"; };
 		A27447A21B95BFC0006FD7D1 /* regions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = regions.csv; sourceTree = "<group>"; };
@@ -376,6 +379,7 @@
 		A26C33941B7B2B410065E103 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A27089241BA970D20082A15E /* PopViews */,
 				A2FF0CE71B8C79B000C520A5 /* Cells */,
 			);
 			path = Views;
@@ -432,6 +436,15 @@
 				A2CBF1CD1BA6A5BA0061AF61 /* MFCellModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A27089241BA970D20082A15E /* PopViews */ = {
+			isa = PBXGroup;
+			children = (
+				A27089251BA970F70082A15E /* MFSelectView.h */,
+				A27089261BA970F70082A15E /* MFSelectView.m */,
+			);
+			path = PopViews;
 			sourceTree = "<group>";
 		};
 		A2FF0CE71B8C79B000C520A5 /* Cells */ = {
@@ -553,6 +566,7 @@
 				A2FF0CE31B8C632B00C520A5 /* MFMainTabBarController.m in Sources */,
 				A2686C321BA041C8005C9BED /* MFMessageDetailController.m in Sources */,
 				A28B3AC91B96DCF600181B1D /* NSNumber+Util.m in Sources */,
+				A27089271BA970F70082A15E /* MFSelectView.m in Sources */,
 				A26C33701B7B2AC00065E103 /* MyFamily.xcdatamodeld in Sources */,
 				A268CEA41B903E9D00316CBB /* MFRequestHelper.m in Sources */,
 				A2199F7E1B8475830062A750 /* MFBaseViewController.m in Sources */,

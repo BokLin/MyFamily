@@ -14,8 +14,8 @@
 typedef enum : NSUInteger {
     MFCellTypeDefault,
     MFCellTypeTextField,
-    MFCellTypeOption,
-    MFCellTypeDateOption,
+    MFCellTypeSelect,
+    MFCellTypeDateSelect,
     MFCellTypeButton,
     MFCellTypeText
 
@@ -31,9 +31,10 @@ typedef enum : NSUInteger {
 
 @property (nonatomic) NSString *placeholder;
 
+/**
+ 默认YES
+ **/
 @property (nonatomic) BOOL canEdit;
-
-- (id)initWithDic:(NSDictionary *)dic;
 
 - (id)initWithType:(MFCellType)type
              title:(NSString *)title

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bEo-Bi-Ra9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -59,7 +60,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="H27-U8-aKg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="6rR-Rd-lQy" detailTextLabel="fbn-qo-CAA" rowHeight="60" style="IBUITableViewCellStyleValue1" id="hcA-39-61E">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -70,7 +71,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6rR-Rd-lQy">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular-widthClass=compact">
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -187,7 +188,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="UrR-nn-Lx1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="Ygf-27-hR8" detailTextLabel="2vz-fX-TM4" style="IBUITableViewCellStyleValue2" id="LXj-t2-PQM">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -582,7 +583,7 @@
             <objects>
                 <tableViewController id="TPt-9w-BGT" customClass="MFPersonEditController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="8ZP-BI-e0x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -652,12 +653,12 @@
                                             <exclude reference="aqf-TP-pju"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="ESS-fp-WpY"/>
-                                            <exclude reference="Rll-aG-LG8"/>
-                                            <exclude reference="j5L-Uy-MHy"/>
                                             <exclude reference="0ao-6R-EwG"/>
                                             <exclude reference="GqG-1C-aAS"/>
                                             <exclude reference="nMw-FC-3i9"/>
+                                            <exclude reference="ESS-fp-WpY"/>
+                                            <exclude reference="Rll-aG-LG8"/>
+                                            <exclude reference="j5L-Uy-MHy"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -666,15 +667,19 @@
                                             <include reference="aqf-TP-pju"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="ESS-fp-WpY"/>
-                                            <exclude reference="Rll-aG-LG8"/>
-                                            <include reference="j5L-Uy-MHy"/>
                                             <include reference="0ao-6R-EwG"/>
                                             <include reference="GqG-1C-aAS"/>
                                             <include reference="nMw-FC-3i9"/>
+                                            <include reference="ESS-fp-WpY"/>
+                                            <exclude reference="Rll-aG-LG8"/>
+                                            <include reference="j5L-Uy-MHy"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailTextField" destination="aqf-TP-pju" id="PEJ-LA-h8j"/>
+                                    <outlet property="titleLabel" destination="xm8-c6-LFC" id="CVx-6c-3i8"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectCell" rowHeight="50" id="cmT-YJ-9Tz" customClass="MFTableViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -766,6 +771,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailTextField" destination="jhd-cG-Awh" id="Dgq-YY-PXJ"/>
+                                    <outlet property="titleLabel" destination="TdW-ci-AWZ" id="EYm-Dg-JnM"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectDateCell" rowHeight="50" id="CSU-9M-dUY" customClass="MFTableViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -857,6 +866,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailTextField" destination="p6C-bl-wsf" id="JBu-64-jOX"/>
+                                    <outlet property="titleLabel" destination="2xN-BN-QHw" id="3bJ-6Z-rgB"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="8tX-Lg-H2i" detailTextLabel="jjY-Ss-0Gr" rowHeight="44" style="IBUITableViewCellStyleValue2" id="khX-Ex-rz3" customClass="MFTableViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

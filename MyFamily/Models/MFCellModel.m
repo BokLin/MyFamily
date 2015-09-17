@@ -11,12 +11,12 @@
 @implementation MFCellModel
 
 
-- (id)initWithDic:(NSDictionary *)dic
+- (id)init
 {
     self = [super init];
     if (self) {
     
-        
+        _canEdit = YES;
         
     }
     return self;
@@ -31,7 +31,7 @@
                         title:title
                        detail:detail
                   placeholder:@""
-                      canEdit:NO];
+                      canEdit:YES];
 }
 - (id)initWithType:(MFCellType)type
                title:(NSString *)title
@@ -40,7 +40,7 @@
              canEdit:(BOOL)canEdit
 {
     
-    self = [super init];
+    self = [self init];
     if (self) {
         
         self.cellType = type;

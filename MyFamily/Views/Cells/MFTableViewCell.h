@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Globals.h"
+
 @interface MFTableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *detailTextField;
+
+@property (nonatomic, assign) MFCellType type;
+
+@property (nonatomic, retain) MFCellModel *model;
+
+@end
+
+@protocol MFTableViesDelegate <NSObject>
+
+
 
 @end
