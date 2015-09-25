@@ -185,6 +185,13 @@
     [cell setModel:model];
 
     
+    [cell textFieldTapped:^(MFTableViewCell *cell) {
+       
+        
+        NSLog(@"12313121");
+    }];
+    
+    
     return cell;
 }
 

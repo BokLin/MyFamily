@@ -18,7 +18,7 @@
 }
 */
 
-- (id)initWithHeight:(NSInteger)heingt
+- (instancetype)initWithHeight:(NSInteger)heingt
 {
     self = [super initWithFrame:SCREEN_RECT];
     if (self) {

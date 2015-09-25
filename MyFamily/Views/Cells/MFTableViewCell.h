@@ -10,7 +10,9 @@
 
 #import "Globals.h"
 
-@interface MFTableViewCell : UITableViewCell
+@interface MFTableViewCell : UITableViewCell<UITextFieldDelegate>
+
+typedef void (^textFieldBlock) (MFTableViewCell *cell);
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
@@ -20,10 +22,10 @@
 
 @property (nonatomic, retain) MFCellModel *model;
 
-@end
+@property (nonatomic, retain) NSIndexPath *indexPath;
 
-@protocol MFTableViesDelegate <NSObject>
+- (void)textFieldTapped:(textFieldBlock) block;
 
-
+@property (nonatomic, strong)textFieldBlock block;
 
 @end

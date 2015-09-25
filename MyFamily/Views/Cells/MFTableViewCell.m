@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    _detailTextField.delegate = self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -57,9 +58,37 @@
         default:
             break;
     }
+        
     
-    _detailTextField.enabled = model.canEdit;
-
 }
+
+- (void)tapAction:(void (^)(id, int))tap
+{
+    
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    self.block(self);
+    
+    return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    return YES;
+}
+
+- (void)textFieldTapped:(textFieldBlock)block
+{
+    self.block = block;
+}
+
+
 
 @end

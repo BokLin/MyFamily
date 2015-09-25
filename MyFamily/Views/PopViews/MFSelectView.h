@@ -34,7 +34,7 @@ typedef enum : NSUInteger {
     NSInteger _height;
 }
 
-- (id)initWithHeight:(NSInteger)heingt;
+- (instancetype)initWithHeight:(NSInteger)heingt;
 
 - (void)setDate:(NSDate *)date;
 
