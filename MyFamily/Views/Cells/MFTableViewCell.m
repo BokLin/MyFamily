@@ -59,12 +59,6 @@
             break;
     }
         
-    
-}
-
-- (void)tapAction:(void (^)(id, int))tap
-{
-    
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
@@ -74,7 +68,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    self.block(self);
+    self.block(self,MFCellActionTypeButtonTapped);
     
     return YES;
 }
@@ -84,7 +78,7 @@
     return YES;
 }
 
-- (void)textFieldTapped:(textFieldBlock)block
+- (void)cellActionBlock:(actionBlock) block
 {
     self.block = block;
 }

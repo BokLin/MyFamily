@@ -185,10 +185,8 @@
     [cell setModel:model];
 
     
-    [cell textFieldTapped:^(MFTableViewCell *cell) {
-       
+    [cell cellActionBlock:^(MFTableViewCell *cell, MFCellActionType type) {
         
-        NSLog(@"12313121");
     }];
     
     

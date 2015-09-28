@@ -10,9 +10,19 @@
 
 #import "Globals.h"
 
+typedef enum : NSUInteger {
+    MFCellActionTypeDefault,
+    MFCellActionTypeTextFieldTapped,
+    MFCellActionTypeButtonTapped,
+    MFCellActionTypePrevious,
+    MFCellActionTypeNext,
+    MFCellActionTypeUpdated,
+    MFCellActionTypeDismissed
+} MFCellActionType;
+
 @interface MFTableViewCell : UITableViewCell<UITextFieldDelegate>
 
-typedef void (^textFieldBlock) (MFTableViewCell *cell);
+typedef void (^actionBlock) (MFTableViewCell *cell, MFCellActionType type);
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
@@ -24,8 +34,9 @@ typedef void (^textFieldBlock) (MFTableViewCell *cell);
 
 @property (nonatomic, retain) NSIndexPath *indexPath;
 
-- (void)textFieldTapped:(textFieldBlock) block;
+@property (nonatomic, strong)actionBlock block;
 
-@property (nonatomic, strong)textFieldBlock block;
+
+- (void)cellActionBlock:(actionBlock) block;
 
 @end
