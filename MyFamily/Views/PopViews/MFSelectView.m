@@ -8,6 +8,9 @@
 
 #import "MFSelectView.h"
 
+#define SelectHeight 216
+#define SelectBgColor [UIColor whiteColor]
+
 @implementation MFSelectView
 
 /*
@@ -18,24 +21,40 @@
 }
 */
 
-- (instancetype)initWithHeight:(NSInteger)heingt
+- (instancetype)initWithTitle:(NSString *)title
 {
     self = [super initWithFrame:SCREEN_RECT];
     if (self) {
         
-        _height = 216;
+        _height = SelectHeight+100;
+        
+        _title = title;
         
         self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
         
+        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height)];
+        _contentView.backgroundColor = [UIColor clearColor];
+        [self addSubview:_contentView];
+        
+        UIView *titleBar = [[UIView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, 50)];
+        titleBar.backgroundColor = SelectBgColor;
+        [_contentView addSubview:titleBar];
+        
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 0, SCREEN_WIDTH-100, 50)];
+        _titleLabel.backgroundColor = [UIColor clearColor];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        [titleBar addSubview:_titleLabel];
+        _titleLabel.text = title;
+        
         // 初始化时间选择器
-        _datePecker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height)];
-        _datePecker.backgroundColor = [UIColor whiteColor];
-        [self addSubview:_datePecker];
+        _datePecker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, _height-SelectHeight, SCREEN_WIDTH, SelectHeight)];
+        _datePecker.backgroundColor = SelectBgColor;
+        [_contentView addSubview:_datePecker];
         
         // 初始化选择器
-        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height)];
-        [self addSubview:_pickerView];
-        _pickerView.backgroundColor = [UIColor whiteColor];
+        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, _height-SelectHeight, SCREEN_WIDTH, SelectHeight)];
+        [_contentView addSubview:_pickerView];
+        _pickerView.backgroundColor = SelectBgColor;
         _pickerView.delegate = self;
         _pickerView.dataSource = self;
         
@@ -50,9 +69,22 @@
         
         [self addGestureRecognizer:tap];
         
+        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, 0.5)];
+        line1.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
+        [_contentView addSubview:line1];
+        
+        UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 0.5)];
+        line2.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
+        [_contentView addSubview:line2];
+        
     }
     
     return self;
+}
+
+- (void)addSelectBlock:(selectBlock)block
+{
+    self.block = block;
 }
 
 - (void)bgTapped:(id)sender
@@ -61,9 +93,10 @@
     
 }
 
-- (void)setHeight:(NSInteger)height
+- (void)setTitle:(NSString *)title
 {
-    _height = 216;
+    _title = title;
+    _titleLabel.text = title;
 }
 
 - (void)setDate:(NSDate *)date
@@ -71,9 +104,17 @@
     _currectDate = date;
 }
 
+- (void)setDateModel:(UIDatePickerMode)dateModel
+{
+    _datePecker.datePickerMode = dateModel;
+}
+
 - (void)setIndex:(NSInteger)index
 {
     _currentIndex = index;
+    if (_pickerView) {
+        [_pickerView selectRow:index inComponent:0 animated:YES];
+    }
 }
 
 - (void)setupSelect:(NSArray *)datas index:(NSInteger)index
@@ -81,24 +122,25 @@
     _datePecker.hidden = YES;
     _pickerView.hidden = NO;
     
-    _type = MFSelectViewTypeDefault;
+    _selectType = MFSelectViewTypeDefault;
     _currentIndex = index;
     _dataSource = datas;
     
+    [_pickerView selectRow:index inComponent:0 animated:YES];
     [_pickerView reloadAllComponents];
 }
 
-- (void)setupDateSelect:(NSDate *)date
+- (void)setupDateSelect:(NSDate *)date model:(UIDatePickerMode)dateModel
 {
     _datePecker.hidden = NO;
     _pickerView.hidden = YES;
     
     _currectDate = date;
     
-    _type = MFSelectViewTypeDate;
+    _selectType = MFSelectViewTypeDate;
     
     [_datePecker setDate:date animated:YES];
-    
+    [_datePecker setDatePickerMode:dateModel];
 }
 
 - (void)showinView:(UIView *)view
@@ -107,34 +149,28 @@
     [view addSubview:self];
     
     self.hidden = NO;
-
-
-    if (_type == MFSelectViewTypeDefault) {
+    
+    [UIView animateWithDuration:0.4 animations:^{
         
-        [UIView animateWithDuration:0.4 animations:^{
-            _pickerView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
-            
-            
-        } completion:^(BOOL finished) {
-            _pickerView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
-
+        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
+        
+    } completion:^(BOOL finished) {
+        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
+        
+        if (_selectType == MFSelectViewTypeDefault) {
             [_pickerView selectRow:_currentIndex inComponent:0 animated:YES];
-            
-        }];
-    }else {
-        
-        [UIView animateWithDuration:0.4 animations:^{
-            _datePecker.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
-            
-            
-        } completion:^(BOOL finished) {
-            _pickerView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
-
+        }else {
             [_datePecker setDate:_currectDate];
             
-        }];
+        }
         
-    }
+        if (self.block) {
+            
+            self.block(self,MFSelectActionTypeDidShow);
+        }
+    }];
+
+
 }
 
 - (void)showinWindow
@@ -147,35 +183,35 @@
     
     if (animation == NO) {
         
-        _datePecker.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
+        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
         
-        _pickerView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
-
         self.hidden = YES;
         
-        return;
+    }else {
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            
+            _contentView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
+            
+        } completion:^(BOOL finished) {
+            
+            self.hidden = YES;
+            
+        }];
     }
     
+    if (self.block) {
     
-    [UIView animateWithDuration:0.4 animations:^{
-        
-        _datePecker.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
-        
-        _pickerView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
-
-        
-    } completion:^(BOOL finished) {
- 
-        self.hidden = YES;
-
-    }];
-    
-    
+        self.block(self,MFSelectActionTypeDidDismiss);
+    }
 }
 
 - (void)dateChaneged:(id)sender
 {
-    
+    if (self.block) {
+        
+        self.block(self,MFSelectActionTypeValueChanged);
+    }
 }
 
 #pragma mark - UIPickerViewDelegate
@@ -208,7 +244,10 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
+    if (self.block) {
+        
+        self.block(self,MFSelectActionTypeValueChanged);
+    }
 }
 
 @end

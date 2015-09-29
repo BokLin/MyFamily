@@ -15,7 +15,7 @@ typedef enum : NSUInteger {
     MFCellTypeDefault,
     MFCellTypeTextField,
     MFCellTypeSelect,
-    MFCellTypeDateSelect,
+    MFCellTypeSelectDate,
     MFCellTypeButton,
     MFCellTypeText
 

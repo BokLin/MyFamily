@@ -12,12 +12,11 @@
 
 typedef enum : NSUInteger {
     MFCellActionTypeDefault,
-    MFCellActionTypeTextFieldTapped,
+    MFCellActionTypeEditBegin,
+    MFCellActionTypeSelectBegin,
+    MFCellActionTypeSelectDateBegin,
     MFCellActionTypeButtonTapped,
-    MFCellActionTypePrevious,
-    MFCellActionTypeNext,
-    MFCellActionTypeUpdated,
-    MFCellActionTypeDismissed
+    MFCellActionTypeValueUpdated
 } MFCellActionType;
 
 @interface MFTableViewCell : UITableViewCell<UITextFieldDelegate>
@@ -36,7 +35,11 @@ typedef void (^actionBlock) (MFTableViewCell *cell, MFCellActionType type);
 
 @property (nonatomic, strong)actionBlock block;
 
-
-- (void)cellActionBlock:(actionBlock) block;
+/**
+ *  The block of cell actions
+ *
+ *  @param block 外部调用方法
+ */
+- (void)addActionBlock:(actionBlock) block;
 
 @end

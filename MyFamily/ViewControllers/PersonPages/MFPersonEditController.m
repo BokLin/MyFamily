@@ -45,11 +45,11 @@
 {
     if (_selectView == nil) {
         
-        _selectView = [[MFSelectView alloc]initWithHeight:220];
+        _selectView = [[MFSelectView alloc]initWithTitle:@"选择时间"];
         
     }
     if (i%2) {
-        [_selectView setupDateSelect:[NSDate date]];
+        [_selectView setupDateSelect:[NSDate date] model:UIDatePickerModeDate];
         
         [_selectView showinWindow];
     }else{
@@ -58,6 +58,10 @@
         [_selectView showinWindow];
     }
 
+    [_selectView addSelectBlock:^(MFSelectView *selectView, MFSelectActionType type) {
+        NSLog(@"select-%ld",type);
+
+    }];
     
     i++;
 
@@ -73,11 +77,11 @@
     MFCellModel *m1 = [[MFCellModel alloc] initWithType:MFCellTypeDefault title:@"个人ID" detail:[NSString stringWithFormat:@"%lld",person.personID]];
     MFCellModel *m2 = [[MFCellModel alloc] initWithType:MFCellTypeTextField title:@"真实姓名" detail:person.realName placeholder:@"请选择性别" canEdit:YES];
     MFCellModel *m3 = [[MFCellModel alloc] initWithType:MFCellTypeSelect title:@"性别" detail:@"男" placeholder:@"请选择性别" canEdit:YES];
-    MFCellModel *m4 = [[MFCellModel alloc] initWithType:MFCellTypeDateSelect title:@"生日" detail:@"" placeholder:@"请选择" canEdit:YES];
-    MFCellModel *m5 = [[MFCellModel alloc] initWithType:MFCellTypeDateSelect title:@"生日1" detail:@"" placeholder:@"请选择" canEdit:YES];
-    MFCellModel *m6 = [[MFCellModel alloc] initWithType:MFCellTypeDateSelect title:@"生日2" detail:@"" placeholder:@"请选择" canEdit:YES];
-    MFCellModel *m7 = [[MFCellModel alloc] initWithType:MFCellTypeDateSelect title:@"生日3" detail:@"" placeholder:@"请选择" canEdit:YES];
-    MFCellModel *m8 = [[MFCellModel alloc] initWithType:MFCellTypeDateSelect title:@"生日4" detail:@"" placeholder:@"请选择" canEdit:YES];
+    MFCellModel *m4 = [[MFCellModel alloc] initWithType:MFCellTypeSelectDate title:@"生日" detail:@"" placeholder:@"请选择" canEdit:YES];
+    MFCellModel *m5 = [[MFCellModel alloc] initWithType:MFCellTypeSelectDate title:@"生日1" detail:@"" placeholder:@"请选择" canEdit:YES];
+    MFCellModel *m6 = [[MFCellModel alloc] initWithType:MFCellTypeSelectDate title:@"生日2" detail:@"" placeholder:@"请选择" canEdit:YES];
+    MFCellModel *m7 = [[MFCellModel alloc] initWithType:MFCellTypeSelectDate title:@"生日3" detail:@"" placeholder:@"请选择" canEdit:YES];
+    MFCellModel *m8 = [[MFCellModel alloc] initWithType:MFCellTypeSelectDate title:@"生日4" detail:@"" placeholder:@"请选择" canEdit:YES];
 
     NSArray *arr1 = @[m1,m2,m3,m4,m5,m6,m7,m8];
     
@@ -153,7 +157,7 @@
             
         }
             break;
-        case MFCellTypeDateSelect:
+        case MFCellTypeSelectDate:
         {
             cell = [tableView dequeueReusableCellWithIdentifier:@"selectDateCell" forIndexPath:indexPath];
    
@@ -179,14 +183,30 @@
             break;
     }
     
-    
-    
-
     [cell setModel:model];
-
     
-    [cell cellActionBlock:^(MFTableViewCell *cell, MFCellActionType type) {
-        
+    [cell addActionBlock:^(MFTableViewCell *cell, MFCellActionType type) {
+       
+        NSLog(@"cell-%ld",type);
+        switch (type) {
+            case MFCellActionTypeSelectBegin:
+                
+                break;
+            case MFCellActionTypeSelectDateBegin:
+                
+                break;
+            case MFCellActionTypeButtonTapped:
+                
+                break;
+            case MFCellActionTypeValueUpdated:
+                
+                break;
+            case MFCellActionTypeDefault:
+                
+                break;
+            default:
+                break;
+        }
     }];
     
     

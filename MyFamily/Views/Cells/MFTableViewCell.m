@@ -42,7 +42,7 @@
             _detailTextField.textAlignment = NSTextAlignmentCenter;
             
             break;
-        case MFCellTypeDateSelect:
+        case MFCellTypeSelectDate:
             _titleLabel.text = model.title;
             _detailTextField.text = model.detail;
             _detailTextField.placeholder = model.placeholder;
@@ -63,7 +63,26 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    return YES;
+    switch (_type) {
+        case MFCellTypeTextField:
+            
+            self.block(self, MFCellActionTypeEditBegin);
+            return YES;
+            break;
+        case MFCellTypeSelect:
+            
+            self.block(self, MFCellActionTypeSelectBegin);
+            return NO;
+            break;
+        case MFCellTypeSelectDate:
+            
+            self.block(self, MFCellActionTypeSelectDateBegin);
+            return NO;
+            break;
+        default:
+            return NO;
+            break;
+    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -78,11 +97,9 @@
     return YES;
 }
 
-- (void)cellActionBlock:(actionBlock) block
+- (void)addActionBlock:(actionBlock) block
 {
     self.block = block;
 }
-
-
 
 @end
