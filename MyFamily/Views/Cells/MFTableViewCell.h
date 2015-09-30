@@ -27,8 +27,6 @@ typedef void (^actionBlock) (MFTableViewCell *cell, MFCellActionType type);
 
 @property (weak, nonatomic) IBOutlet UITextField *detailTextField;
 
-@property (nonatomic, assign) MFCellType type;
-
 @property (nonatomic, retain) MFCellModel *model;
 
 @property (nonatomic, retain) NSIndexPath *indexPath;

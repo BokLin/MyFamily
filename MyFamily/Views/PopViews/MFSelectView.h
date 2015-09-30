@@ -117,20 +117,22 @@ typedef void (^selectBlock) (MFSelectView *selectView, MFSelectActionType type);
 - (void)setIndex:(NSInteger)index;
 
 /**
- *  选择器数据初始化（选择器必选）
+ *  选择器模式
  *
- *  @param datas 字符串类型数组
+ *  @param title 标题
+ *  @param datas 数据数组
  *  @param index 下标
  */
-- (void)setupSelect:(NSArray *)datas index:(NSInteger)index;
+- (void)setupSelectTitle:(NSString *)title datas:(NSArray *)datas index:(NSInteger)index;
 
 /**
- *  时间选择器初始化（时间必选）
+ *  时间选择器模式
  *
- *  @param date      当前时间
- *  @param dateModel 选择器的模式
+ *  @param title     标题
+ *  @param date      时间
+ *  @param dateModel 时间模式
  */
-- (void)setupDateSelect:(NSDate *)date model:(UIDatePickerMode)dateModel;
+- (void)setupDateSelectTitle:(NSString *)title datas:(NSDate *)date model:(UIDatePickerMode)dateModel;
 
 /**
  *  页面显示

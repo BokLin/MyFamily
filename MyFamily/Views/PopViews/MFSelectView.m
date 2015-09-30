@@ -10,6 +10,8 @@
 
 #define SelectHeight 216
 #define SelectBgColor [UIColor whiteColor]
+#define ViewWidth SCREEN_WIDTH
+#define BarHeight 50
 
 @implementation MFSelectView
 
@@ -26,33 +28,59 @@
     self = [super initWithFrame:SCREEN_RECT];
     if (self) {
         
-        _height = SelectHeight+100;
+        _height = SelectHeight + BarHeight;
         
         _title = title;
         
         self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
         
-        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height)];
+        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, ViewWidth, _height)];
         _contentView.backgroundColor = [UIColor clearColor];
         [self addSubview:_contentView];
         
-        UIView *titleBar = [[UIView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, 50)];
+        UIView *titleBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, BarHeight)];
         titleBar.backgroundColor = SelectBgColor;
         [_contentView addSubview:titleBar];
         
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 0, SCREEN_WIDTH-100, 50)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 0, ViewWidth-100, BarHeight)];
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         [titleBar addSubview:_titleLabel];
         _titleLabel.text = title;
         
+        _previousButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _previousButton.frame = CGRectMake(10, 10, 30, 30);
+        [_previousButton setTitle:@"←" forState:UIControlStateNormal];
+        [_previousButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [titleBar addSubview:_previousButton];
+        
+        _nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _nextButton.frame = CGRectMake(40, 10, 30, 30);
+        [_nextButton setTitle:@"→" forState:UIControlStateNormal];
+        [_nextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [titleBar addSubview:_nextButton];
+        
+        _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _cancelButton.frame = CGRectMake(ViewWidth - 80, 10, 30, 30);
+        [_cancelButton.titleLabel setFont:[UIFont systemFontOfSize:22]];
+        [_cancelButton setTitle:@"×" forState:UIControlStateNormal];
+        [_cancelButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [titleBar addSubview:_cancelButton];
+        
+        _okButton  = [UIButton buttonWithType:UIButtonTypeCustom];
+        _okButton.frame = CGRectMake(ViewWidth - 40, 10, 30, 30);
+        [_okButton setTitle:@"√" forState:UIControlStateNormal];
+        [_okButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [titleBar addSubview:_okButton];
+        
+        
         // 初始化时间选择器
-        _datePecker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, _height-SelectHeight, SCREEN_WIDTH, SelectHeight)];
+        _datePecker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, _height-SelectHeight, ViewWidth, SelectHeight)];
         _datePecker.backgroundColor = SelectBgColor;
         [_contentView addSubview:_datePecker];
         
         // 初始化选择器
-        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, _height-SelectHeight, SCREEN_WIDTH, SelectHeight)];
+        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, _height-SelectHeight, ViewWidth, SelectHeight)];
         [_contentView addSubview:_pickerView];
         _pickerView.backgroundColor = SelectBgColor;
         _pickerView.delegate = self;
@@ -65,18 +93,18 @@
         _datePecker.userInteractionEnabled = YES;
         _pickerView.userInteractionEnabled = YES;
         
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bgTapped:)];
-        
-        [self addGestureRecognizer:tap];
-        
-        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, 0.5)];
+        UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, 0.5)];
         line1.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
         [_contentView addSubview:line1];
         
-        UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 0.5)];
+        UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(0, BarHeight, ViewWidth, 0.5)];
         line2.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
         [_contentView addSubview:line2];
         
+        UIView *tapView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ViewWidth, SCREEN_HEIGHT - _height)];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bgTapped:)];
+        [tapView addGestureRecognizer:tap];
+        [self addSubview:tapView];
     }
     
     return self;
@@ -117,7 +145,7 @@
     }
 }
 
-- (void)setupSelect:(NSArray *)datas index:(NSInteger)index
+- (void)setupSelectTitle:(NSString *)title datas:(NSArray *)datas index:(NSInteger)index
 {
     _datePecker.hidden = YES;
     _pickerView.hidden = NO;
@@ -130,7 +158,7 @@
     [_pickerView reloadAllComponents];
 }
 
-- (void)setupDateSelect:(NSDate *)date model:(UIDatePickerMode)dateModel
+- (void)setupDateSelectTitle:(NSString *)title datas:(NSDate *)date model:(UIDatePickerMode)dateModel
 {
     _datePecker.hidden = NO;
     _pickerView.hidden = YES;
@@ -152,10 +180,10 @@
     
     [UIView animateWithDuration:0.4 animations:^{
         
-        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
+        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, ViewWidth, _height);
         
     } completion:^(BOOL finished) {
-        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, SCREEN_WIDTH, _height);
+        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT-_height, ViewWidth, _height);
         
         if (_selectType == MFSelectViewTypeDefault) {
             [_pickerView selectRow:_currentIndex inComponent:0 animated:YES];
@@ -183,7 +211,7 @@
     
     if (animation == NO) {
         
-        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
+        _contentView.frame = CGRectMake(0, SCREEN_HEIGHT, ViewWidth, _height);
         
         self.hidden = YES;
         
@@ -191,7 +219,7 @@
         
         [UIView animateWithDuration:0.4 animations:^{
             
-            _contentView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, _height);
+            _contentView.frame = CGRectMake(0, SCREEN_HEIGHT, ViewWidth, _height);
             
         } completion:^(BOOL finished) {
             

@@ -43,17 +43,20 @@
 
 - (void)rightBarButtonAction:(id)sender
 {
+
+    [self.view endEditing:YES];
+
     if (_selectView == nil) {
         
         _selectView = [[MFSelectView alloc]initWithTitle:@"选择时间"];
         
     }
     if (i%2) {
-        [_selectView setupDateSelect:[NSDate date] model:UIDatePickerModeDate];
+        [_selectView setupDateSelectTitle:@"选择时间" datas:[NSDate date] model:UIDatePickerModeDateAndTime];
         
         [_selectView showinWindow];
     }else{
-        [_selectView setupSelect:@[@"1",@"2",@"3",@"4",@"5"] index:0];
+        [_selectView setupSelectTitle:@"选择" datas:@[@"1",@"2",@"3",@"4",@"5"] index:0];
         
         [_selectView showinWindow];
     }
@@ -72,7 +75,6 @@
     
     MFPersonModel *person = [MFRequestHelper shareInstance].person;
     //MFRequestHelper *user = [MFRequestHelper shareInstance].user;
-    
     
     MFCellModel *m1 = [[MFCellModel alloc] initWithType:MFCellTypeDefault title:@"个人ID" detail:[NSString stringWithFormat:@"%lld",person.personID]];
     MFCellModel *m2 = [[MFCellModel alloc] initWithType:MFCellTypeTextField title:@"真实姓名" detail:person.realName placeholder:@"请选择性别" canEdit:YES];

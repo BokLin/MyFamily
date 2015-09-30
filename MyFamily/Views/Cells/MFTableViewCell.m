@@ -23,6 +23,7 @@
 
 - (void)setModel:(MFCellModel *)model
 {
+    _model = model;
     switch (model.cellType) {
         case MFCellTypeDefault:
             self.textLabel.text = model.title;
@@ -63,7 +64,11 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    switch (_type) {
+    
+    if (_model == nil) {
+        return NO;
+    }
+    switch (_model.cellType) {
         case MFCellTypeTextField:
             
             self.block(self, MFCellActionTypeEditBegin);
