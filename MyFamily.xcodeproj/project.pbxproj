@@ -7,6 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E44C09F1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C05C1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.m */; };
+		5E44C0A01CB4FBA600229400 /* MFUser_NotifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C05E1CB4FBA600229400 /* MFUser_NotifModel.m */; };
+		5E44C0A11CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0601CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.m */; };
+		5E44C0A21CB4FBA600229400 /* MFHolidayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0621CB4FBA600229400 /* MFHolidayModel.m */; };
+		5E44C0A31CB4FBA600229400 /* MFNoteModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0641CB4FBA600229400 /* MFNoteModel+CoreDataProperties.m */; };
+		5E44C0A41CB4FBA600229400 /* MFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0661CB4FBA600229400 /* MFNoteModel.m */; };
+		5E44C0A51CB4FBA600229400 /* MFRegionModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0681CB4FBA600229400 /* MFRegionModel+CoreDataProperties.m */; };
+		5E44C0A61CB4FBA600229400 /* MFRegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C06A1CB4FBA600229400 /* MFRegionModel.m */; };
+		5E44C0A71CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C06C1CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.m */; };
+		5E44C0A81CB4FBA600229400 /* MFUser_TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C06E1CB4FBA600229400 /* MFUser_TaskModel.m */; };
+		5E44C0A91CB4FBA600229400 /* MFRelationModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0701CB4FBA600229400 /* MFRelationModel+CoreDataProperties.m */; };
+		5E44C0AA1CB4FBA600229400 /* MFRelationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0721CB4FBA600229400 /* MFRelationModel.m */; };
+		5E44C0AB1CB4FBA600229400 /* MFIndexModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0741CB4FBA600229400 /* MFIndexModel+CoreDataProperties.m */; };
+		5E44C0AC1CB4FBA600229400 /* MFIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0761CB4FBA600229400 /* MFIndexModel.m */; };
+		5E44C0AD1CB4FBA600229400 /* MFMessageModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0781CB4FBA600229400 /* MFMessageModel+CoreDataProperties.m */; };
+		5E44C0AE1CB4FBA600229400 /* MFMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C07A1CB4FBA600229400 /* MFMessageModel.m */; };
+		5E44C0AF1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C07C1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.m */; };
+		5E44C0B01CB4FBA600229400 /* MFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C07E1CB4FBA600229400 /* MFBaseModel.m */; };
+		5E44C0B11CB4FBA600229400 /* MFNotifModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0801CB4FBA600229400 /* MFNotifModel+CoreDataProperties.m */; };
+		5E44C0B21CB4FBA600229400 /* MFNotifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0821CB4FBA600229400 /* MFNotifModel.m */; };
+		5E44C0B31CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0841CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.m */; };
+		5E44C0B41CB4FBA600229400 /* MFUser_MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0861CB4FBA600229400 /* MFUser_MessageModel.m */; };
+		5E44C0B51CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0881CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.m */; };
+		5E44C0B61CB4FBA600229400 /* MFUser_NoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C08A1CB4FBA600229400 /* MFUser_NoteGroupModel.m */; };
+		5E44C0B71CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C08C1CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.m */; };
+		5E44C0B81CB4FBA600229400 /* MFUser_NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C08E1CB4FBA600229400 /* MFUser_NoteModel.m */; };
+		5E44C0B91CB4FBA600229400 /* MFUserModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0901CB4FBA600229400 /* MFUserModel+CoreDataProperties.m */; };
+		5E44C0BA1CB4FBA600229400 /* MFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0921CB4FBA600229400 /* MFUserModel.m */; };
+		5E44C0BB1CB4FBA600229400 /* MFTaskModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0941CB4FBA600229400 /* MFTaskModel+CoreDataProperties.m */; };
+		5E44C0BC1CB4FBA600229400 /* MFTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0961CB4FBA600229400 /* MFTaskModel.m */; };
+		5E44C0BD1CB4FBA600229400 /* MFPersonModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C0981CB4FBA600229400 /* MFPersonModel+CoreDataProperties.m */; };
+		5E44C0BE1CB4FBA600229400 /* MFPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C09A1CB4FBA600229400 /* MFPersonModel.m */; };
+		5E44C0BF1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C09C1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.m */; };
+		5E44C0C01CB4FBA600229400 /* MFNoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E44C09E1CB4FBA600229400 /* MFNoteGroupModel.m */; };
 		A2199F7E1B8475830062A750 /* MFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2199F7D1B8475830062A750 /* MFBaseViewController.m */; };
 		A25DE6E81B9BEA2E0071FD1C /* MFInitialData.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE6E71B9BEA2E0071FD1C /* MFInitialData.m */; };
 		A25DE6EA1B9C1E220071FD1C /* holidays.csv in Resources */ = {isa = PBXBuildFile; fileRef = A25DE6E91B9C1E220071FD1C /* holidays.csv */; };
@@ -38,23 +72,6 @@
 		A28B3AC91B96DCF600181B1D /* NSNumber+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B3AC81B96DCF600181B1D /* NSNumber+Util.m */; };
 		A2901CEE1B9D737A00D92129 /* MFBackupData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2901CED1B9D737A00D92129 /* MFBackupData.m */; };
 		A2901CF11B9D7A2F00D92129 /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A2901CF01B9D7A2F00D92129 /* NSObject+Util.m */; };
-		A2B7F55C1BA164100062D64A /* MFUser_NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F55B1BA164100062D64A /* MFUser_NoteModel.m */; };
-		A2B7F55F1BA164110062D64A /* MFIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F55E1BA164110062D64A /* MFIndexModel.m */; };
-		A2B7F5621BA164110062D64A /* MFMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5611BA164110062D64A /* MFMessageModel.m */; };
-		A2B7F5651BA164110062D64A /* MFRegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5641BA164110062D64A /* MFRegionModel.m */; };
-		A2B7F5681BA164110062D64A /* MFUser_MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5671BA164110062D64A /* MFUser_MessageModel.m */; };
-		A2B7F56B1BA164110062D64A /* MFPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F56A1BA164110062D64A /* MFPersonModel.m */; };
-		A2B7F56E1BA164120062D64A /* MFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F56D1BA164120062D64A /* MFBaseModel.m */; };
-		A2B7F5711BA164120062D64A /* MFNotifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5701BA164120062D64A /* MFNotifModel.m */; };
-		A2B7F5741BA164120062D64A /* MFUser_NoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5731BA164120062D64A /* MFUser_NoteGroupModel.m */; };
-		A2B7F5771BA164120062D64A /* MFRelationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5761BA164120062D64A /* MFRelationModel.m */; };
-		A2B7F57A1BA164120062D64A /* MFTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5791BA164120062D64A /* MFTaskModel.m */; };
-		A2B7F57D1BA164120062D64A /* MFUser_NotifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F57C1BA164120062D64A /* MFUser_NotifModel.m */; };
-		A2B7F5801BA164120062D64A /* MFUser_TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F57F1BA164120062D64A /* MFUser_TaskModel.m */; };
-		A2B7F5831BA164120062D64A /* MFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5821BA164120062D64A /* MFUserModel.m */; };
-		A2B7F5861BA164120062D64A /* MFHolidayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5851BA164120062D64A /* MFHolidayModel.m */; };
-		A2B7F5891BA164120062D64A /* MFNoteGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F5881BA164120062D64A /* MFNoteGroupModel.m */; };
-		A2B7F58C1BA164130062D64A /* MFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7F58B1BA164130062D64A /* MFNoteModel.m */; };
 		A2CBF1CE1BA6A5BA0061AF61 /* MFCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBF1CD1BA6A5BA0061AF61 /* MFCellModel.m */; };
 		A2CBF1D11BA6B1DB0061AF61 /* MFBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBF1D01BA6B1DB0061AF61 /* MFBaseTableViewController.m */; };
 		A2CBF1D41BA6B2660061AF61 /* MFPersonEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CBF1D31BA6B2660061AF61 /* MFPersonEditController.m */; };
@@ -65,6 +82,74 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E44C05B1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFUser_NotifModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C05C1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFUser_NotifModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C05D1CB4FBA600229400 /* MFUser_NotifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NotifModel.h; sourceTree = "<group>"; };
+		5E44C05E1CB4FBA600229400 /* MFUser_NotifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NotifModel.m; sourceTree = "<group>"; };
+		5E44C05F1CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFHolidayModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0601CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFHolidayModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0611CB4FBA600229400 /* MFHolidayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHolidayModel.h; sourceTree = "<group>"; };
+		5E44C0621CB4FBA600229400 /* MFHolidayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHolidayModel.m; sourceTree = "<group>"; };
+		5E44C0631CB4FBA600229400 /* MFNoteModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFNoteModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0641CB4FBA600229400 /* MFNoteModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFNoteModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0651CB4FBA600229400 /* MFNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteModel.h; sourceTree = "<group>"; };
+		5E44C0661CB4FBA600229400 /* MFNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteModel.m; sourceTree = "<group>"; };
+		5E44C0671CB4FBA600229400 /* MFRegionModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFRegionModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0681CB4FBA600229400 /* MFRegionModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFRegionModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0691CB4FBA600229400 /* MFRegionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRegionModel.h; sourceTree = "<group>"; };
+		5E44C06A1CB4FBA600229400 /* MFRegionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRegionModel.m; sourceTree = "<group>"; };
+		5E44C06B1CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFUser_TaskModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C06C1CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFUser_TaskModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C06D1CB4FBA600229400 /* MFUser_TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_TaskModel.h; sourceTree = "<group>"; };
+		5E44C06E1CB4FBA600229400 /* MFUser_TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_TaskModel.m; sourceTree = "<group>"; };
+		5E44C06F1CB4FBA600229400 /* MFRelationModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFRelationModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0701CB4FBA600229400 /* MFRelationModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFRelationModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0711CB4FBA600229400 /* MFRelationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRelationModel.h; sourceTree = "<group>"; };
+		5E44C0721CB4FBA600229400 /* MFRelationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRelationModel.m; sourceTree = "<group>"; };
+		5E44C0731CB4FBA600229400 /* MFIndexModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFIndexModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0741CB4FBA600229400 /* MFIndexModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFIndexModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0751CB4FBA600229400 /* MFIndexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFIndexModel.h; sourceTree = "<group>"; };
+		5E44C0761CB4FBA600229400 /* MFIndexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFIndexModel.m; sourceTree = "<group>"; };
+		5E44C0771CB4FBA600229400 /* MFMessageModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFMessageModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0781CB4FBA600229400 /* MFMessageModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFMessageModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0791CB4FBA600229400 /* MFMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMessageModel.h; sourceTree = "<group>"; };
+		5E44C07A1CB4FBA600229400 /* MFMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMessageModel.m; sourceTree = "<group>"; };
+		5E44C07B1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFBaseModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C07C1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFBaseModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C07D1CB4FBA600229400 /* MFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseModel.h; sourceTree = "<group>"; };
+		5E44C07E1CB4FBA600229400 /* MFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseModel.m; sourceTree = "<group>"; };
+		5E44C07F1CB4FBA600229400 /* MFNotifModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFNotifModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0801CB4FBA600229400 /* MFNotifModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFNotifModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0811CB4FBA600229400 /* MFNotifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotifModel.h; sourceTree = "<group>"; };
+		5E44C0821CB4FBA600229400 /* MFNotifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotifModel.m; sourceTree = "<group>"; };
+		5E44C0831CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFUser_MessageModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0841CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFUser_MessageModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0851CB4FBA600229400 /* MFUser_MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_MessageModel.h; sourceTree = "<group>"; };
+		5E44C0861CB4FBA600229400 /* MFUser_MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_MessageModel.m; sourceTree = "<group>"; };
+		5E44C0871CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFUser_NoteGroupModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0881CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFUser_NoteGroupModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0891CB4FBA600229400 /* MFUser_NoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NoteGroupModel.h; sourceTree = "<group>"; };
+		5E44C08A1CB4FBA600229400 /* MFUser_NoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NoteGroupModel.m; sourceTree = "<group>"; };
+		5E44C08B1CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFUser_NoteModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C08C1CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFUser_NoteModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C08D1CB4FBA600229400 /* MFUser_NoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NoteModel.h; sourceTree = "<group>"; };
+		5E44C08E1CB4FBA600229400 /* MFUser_NoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NoteModel.m; sourceTree = "<group>"; };
+		5E44C08F1CB4FBA600229400 /* MFUserModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFUserModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0901CB4FBA600229400 /* MFUserModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFUserModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0911CB4FBA600229400 /* MFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUserModel.h; sourceTree = "<group>"; };
+		5E44C0921CB4FBA600229400 /* MFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserModel.m; sourceTree = "<group>"; };
+		5E44C0931CB4FBA600229400 /* MFTaskModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFTaskModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0941CB4FBA600229400 /* MFTaskModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFTaskModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0951CB4FBA600229400 /* MFTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTaskModel.h; sourceTree = "<group>"; };
+		5E44C0961CB4FBA600229400 /* MFTaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTaskModel.m; sourceTree = "<group>"; };
+		5E44C0971CB4FBA600229400 /* MFPersonModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFPersonModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C0981CB4FBA600229400 /* MFPersonModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFPersonModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C0991CB4FBA600229400 /* MFPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonModel.h; sourceTree = "<group>"; };
+		5E44C09A1CB4FBA600229400 /* MFPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonModel.m; sourceTree = "<group>"; };
+		5E44C09B1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFNoteGroupModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5E44C09C1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFNoteGroupModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5E44C09D1CB4FBA600229400 /* MFNoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteGroupModel.h; sourceTree = "<group>"; };
+		5E44C09E1CB4FBA600229400 /* MFNoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteGroupModel.m; sourceTree = "<group>"; };
 		A2199F7B1B8475620062A750 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		A2199F7C1B8475830062A750 /* MFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseViewController.h; sourceTree = "<group>"; };
 		A2199F7D1B8475830062A750 /* MFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseViewController.m; sourceTree = "<group>"; };
@@ -127,40 +212,6 @@
 		A2901CED1B9D737A00D92129 /* MFBackupData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBackupData.m; sourceTree = "<group>"; };
 		A2901CEF1B9D7A2F00D92129 /* NSObject+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Util.h"; sourceTree = "<group>"; };
 		A2901CF01B9D7A2F00D92129 /* NSObject+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Util.m"; sourceTree = "<group>"; };
-		A2B7F55A1BA164100062D64A /* MFUser_NoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NoteModel.h; sourceTree = "<group>"; };
-		A2B7F55B1BA164100062D64A /* MFUser_NoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NoteModel.m; sourceTree = "<group>"; };
-		A2B7F55D1BA164110062D64A /* MFIndexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFIndexModel.h; sourceTree = "<group>"; };
-		A2B7F55E1BA164110062D64A /* MFIndexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFIndexModel.m; sourceTree = "<group>"; };
-		A2B7F5601BA164110062D64A /* MFMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMessageModel.h; sourceTree = "<group>"; };
-		A2B7F5611BA164110062D64A /* MFMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMessageModel.m; sourceTree = "<group>"; };
-		A2B7F5631BA164110062D64A /* MFRegionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRegionModel.h; sourceTree = "<group>"; };
-		A2B7F5641BA164110062D64A /* MFRegionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRegionModel.m; sourceTree = "<group>"; };
-		A2B7F5661BA164110062D64A /* MFUser_MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_MessageModel.h; sourceTree = "<group>"; };
-		A2B7F5671BA164110062D64A /* MFUser_MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_MessageModel.m; sourceTree = "<group>"; };
-		A2B7F5691BA164110062D64A /* MFPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPersonModel.h; sourceTree = "<group>"; };
-		A2B7F56A1BA164110062D64A /* MFPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPersonModel.m; sourceTree = "<group>"; };
-		A2B7F56C1BA164120062D64A /* MFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseModel.h; sourceTree = "<group>"; };
-		A2B7F56D1BA164120062D64A /* MFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseModel.m; sourceTree = "<group>"; };
-		A2B7F56F1BA164120062D64A /* MFNotifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotifModel.h; sourceTree = "<group>"; };
-		A2B7F5701BA164120062D64A /* MFNotifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotifModel.m; sourceTree = "<group>"; };
-		A2B7F5721BA164120062D64A /* MFUser_NoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NoteGroupModel.h; sourceTree = "<group>"; };
-		A2B7F5731BA164120062D64A /* MFUser_NoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NoteGroupModel.m; sourceTree = "<group>"; };
-		A2B7F5751BA164120062D64A /* MFRelationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRelationModel.h; sourceTree = "<group>"; };
-		A2B7F5761BA164120062D64A /* MFRelationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRelationModel.m; sourceTree = "<group>"; };
-		A2B7F5781BA164120062D64A /* MFTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTaskModel.h; sourceTree = "<group>"; };
-		A2B7F5791BA164120062D64A /* MFTaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTaskModel.m; sourceTree = "<group>"; };
-		A2B7F57B1BA164120062D64A /* MFUser_NotifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_NotifModel.h; sourceTree = "<group>"; };
-		A2B7F57C1BA164120062D64A /* MFUser_NotifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_NotifModel.m; sourceTree = "<group>"; };
-		A2B7F57E1BA164120062D64A /* MFUser_TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUser_TaskModel.h; sourceTree = "<group>"; };
-		A2B7F57F1BA164120062D64A /* MFUser_TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUser_TaskModel.m; sourceTree = "<group>"; };
-		A2B7F5811BA164120062D64A /* MFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUserModel.h; sourceTree = "<group>"; };
-		A2B7F5821BA164120062D64A /* MFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserModel.m; sourceTree = "<group>"; };
-		A2B7F5841BA164120062D64A /* MFHolidayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHolidayModel.h; sourceTree = "<group>"; };
-		A2B7F5851BA164120062D64A /* MFHolidayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHolidayModel.m; sourceTree = "<group>"; };
-		A2B7F5871BA164120062D64A /* MFNoteGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteGroupModel.h; sourceTree = "<group>"; };
-		A2B7F5881BA164120062D64A /* MFNoteGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteGroupModel.m; sourceTree = "<group>"; };
-		A2B7F58A1BA164130062D64A /* MFNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNoteModel.h; sourceTree = "<group>"; };
-		A2B7F58B1BA164130062D64A /* MFNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNoteModel.m; sourceTree = "<group>"; };
 		A2CBF1CC1BA6A5BA0061AF61 /* MFCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCellModel.h; sourceTree = "<group>"; };
 		A2CBF1CD1BA6A5BA0061AF61 /* MFCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCellModel.m; sourceTree = "<group>"; };
 		A2CBF1CF1BA6B1DB0061AF61 /* MFBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseTableViewController.h; sourceTree = "<group>"; };
@@ -388,41 +439,75 @@
 		A26C33A11B7B38220065E103 /* Datas */ = {
 			isa = PBXGroup;
 			children = (
+				5E44C05B1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.h */,
+				5E44C05C1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.m */,
+				5E44C05D1CB4FBA600229400 /* MFUser_NotifModel.h */,
+				5E44C05E1CB4FBA600229400 /* MFUser_NotifModel.m */,
+				5E44C05F1CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.h */,
+				5E44C0601CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.m */,
+				5E44C0611CB4FBA600229400 /* MFHolidayModel.h */,
+				5E44C0621CB4FBA600229400 /* MFHolidayModel.m */,
+				5E44C0631CB4FBA600229400 /* MFNoteModel+CoreDataProperties.h */,
+				5E44C0641CB4FBA600229400 /* MFNoteModel+CoreDataProperties.m */,
+				5E44C0651CB4FBA600229400 /* MFNoteModel.h */,
+				5E44C0661CB4FBA600229400 /* MFNoteModel.m */,
+				5E44C0671CB4FBA600229400 /* MFRegionModel+CoreDataProperties.h */,
+				5E44C0681CB4FBA600229400 /* MFRegionModel+CoreDataProperties.m */,
+				5E44C0691CB4FBA600229400 /* MFRegionModel.h */,
+				5E44C06A1CB4FBA600229400 /* MFRegionModel.m */,
+				5E44C06B1CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.h */,
+				5E44C06C1CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.m */,
+				5E44C06D1CB4FBA600229400 /* MFUser_TaskModel.h */,
+				5E44C06E1CB4FBA600229400 /* MFUser_TaskModel.m */,
+				5E44C06F1CB4FBA600229400 /* MFRelationModel+CoreDataProperties.h */,
+				5E44C0701CB4FBA600229400 /* MFRelationModel+CoreDataProperties.m */,
+				5E44C0711CB4FBA600229400 /* MFRelationModel.h */,
+				5E44C0721CB4FBA600229400 /* MFRelationModel.m */,
+				5E44C0731CB4FBA600229400 /* MFIndexModel+CoreDataProperties.h */,
+				5E44C0741CB4FBA600229400 /* MFIndexModel+CoreDataProperties.m */,
+				5E44C0751CB4FBA600229400 /* MFIndexModel.h */,
+				5E44C0761CB4FBA600229400 /* MFIndexModel.m */,
+				5E44C0771CB4FBA600229400 /* MFMessageModel+CoreDataProperties.h */,
+				5E44C0781CB4FBA600229400 /* MFMessageModel+CoreDataProperties.m */,
+				5E44C0791CB4FBA600229400 /* MFMessageModel.h */,
+				5E44C07A1CB4FBA600229400 /* MFMessageModel.m */,
+				5E44C07B1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.h */,
+				5E44C07C1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.m */,
+				5E44C07D1CB4FBA600229400 /* MFBaseModel.h */,
+				5E44C07E1CB4FBA600229400 /* MFBaseModel.m */,
+				5E44C07F1CB4FBA600229400 /* MFNotifModel+CoreDataProperties.h */,
+				5E44C0801CB4FBA600229400 /* MFNotifModel+CoreDataProperties.m */,
+				5E44C0811CB4FBA600229400 /* MFNotifModel.h */,
+				5E44C0821CB4FBA600229400 /* MFNotifModel.m */,
+				5E44C0831CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.h */,
+				5E44C0841CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.m */,
+				5E44C0851CB4FBA600229400 /* MFUser_MessageModel.h */,
+				5E44C0861CB4FBA600229400 /* MFUser_MessageModel.m */,
+				5E44C0871CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.h */,
+				5E44C0881CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.m */,
+				5E44C0891CB4FBA600229400 /* MFUser_NoteGroupModel.h */,
+				5E44C08A1CB4FBA600229400 /* MFUser_NoteGroupModel.m */,
+				5E44C08B1CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.h */,
+				5E44C08C1CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.m */,
+				5E44C08D1CB4FBA600229400 /* MFUser_NoteModel.h */,
+				5E44C08E1CB4FBA600229400 /* MFUser_NoteModel.m */,
+				5E44C08F1CB4FBA600229400 /* MFUserModel+CoreDataProperties.h */,
+				5E44C0901CB4FBA600229400 /* MFUserModel+CoreDataProperties.m */,
+				5E44C0911CB4FBA600229400 /* MFUserModel.h */,
+				5E44C0921CB4FBA600229400 /* MFUserModel.m */,
+				5E44C0931CB4FBA600229400 /* MFTaskModel+CoreDataProperties.h */,
+				5E44C0941CB4FBA600229400 /* MFTaskModel+CoreDataProperties.m */,
+				5E44C0951CB4FBA600229400 /* MFTaskModel.h */,
+				5E44C0961CB4FBA600229400 /* MFTaskModel.m */,
+				5E44C0971CB4FBA600229400 /* MFPersonModel+CoreDataProperties.h */,
+				5E44C0981CB4FBA600229400 /* MFPersonModel+CoreDataProperties.m */,
+				5E44C0991CB4FBA600229400 /* MFPersonModel.h */,
+				5E44C09A1CB4FBA600229400 /* MFPersonModel.m */,
+				5E44C09B1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.h */,
+				5E44C09C1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.m */,
+				5E44C09D1CB4FBA600229400 /* MFNoteGroupModel.h */,
+				5E44C09E1CB4FBA600229400 /* MFNoteGroupModel.m */,
 				A25DE6E91B9C1E220071FD1C /* holidays.csv */,
-				A2B7F56C1BA164120062D64A /* MFBaseModel.h */,
-				A2B7F56D1BA164120062D64A /* MFBaseModel.m */,
-				A2B7F5841BA164120062D64A /* MFHolidayModel.h */,
-				A2B7F5851BA164120062D64A /* MFHolidayModel.m */,
-				A2B7F55D1BA164110062D64A /* MFIndexModel.h */,
-				A2B7F55E1BA164110062D64A /* MFIndexModel.m */,
-				A2B7F5601BA164110062D64A /* MFMessageModel.h */,
-				A2B7F5611BA164110062D64A /* MFMessageModel.m */,
-				A2B7F5871BA164120062D64A /* MFNoteGroupModel.h */,
-				A2B7F5881BA164120062D64A /* MFNoteGroupModel.m */,
-				A2B7F58A1BA164130062D64A /* MFNoteModel.h */,
-				A2B7F58B1BA164130062D64A /* MFNoteModel.m */,
-				A2B7F56F1BA164120062D64A /* MFNotifModel.h */,
-				A2B7F5701BA164120062D64A /* MFNotifModel.m */,
-				A2B7F5691BA164110062D64A /* MFPersonModel.h */,
-				A2B7F56A1BA164110062D64A /* MFPersonModel.m */,
-				A2B7F5631BA164110062D64A /* MFRegionModel.h */,
-				A2B7F5641BA164110062D64A /* MFRegionModel.m */,
-				A2B7F5751BA164120062D64A /* MFRelationModel.h */,
-				A2B7F5761BA164120062D64A /* MFRelationModel.m */,
-				A2B7F5781BA164120062D64A /* MFTaskModel.h */,
-				A2B7F5791BA164120062D64A /* MFTaskModel.m */,
-				A2B7F5661BA164110062D64A /* MFUser_MessageModel.h */,
-				A2B7F5671BA164110062D64A /* MFUser_MessageModel.m */,
-				A2B7F5721BA164120062D64A /* MFUser_NoteGroupModel.h */,
-				A2B7F5731BA164120062D64A /* MFUser_NoteGroupModel.m */,
-				A2B7F55A1BA164100062D64A /* MFUser_NoteModel.h */,
-				A2B7F55B1BA164100062D64A /* MFUser_NoteModel.m */,
-				A2B7F57B1BA164120062D64A /* MFUser_NotifModel.h */,
-				A2B7F57C1BA164120062D64A /* MFUser_NotifModel.m */,
-				A2B7F57E1BA164120062D64A /* MFUser_TaskModel.h */,
-				A2B7F57F1BA164120062D64A /* MFUser_TaskModel.m */,
-				A2B7F5811BA164120062D64A /* MFUserModel.h */,
-				A2B7F5821BA164120062D64A /* MFUserModel.m */,
 				A26C336E1B7B2AC00065E103 /* MyFamily.xcdatamodeld */,
 				A27447A21B95BFC0006FD7D1 /* regions.csv */,
 			);
@@ -531,56 +616,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E44C0B21CB4FBA600229400 /* MFNotifModel.m in Sources */,
 				A2690E051BA818A00068E94C /* MFTableViewCell.m in Sources */,
-				A2B7F5621BA164110062D64A /* MFMessageModel.m in Sources */,
-				A2B7F57A1BA164120062D64A /* MFTaskModel.m in Sources */,
-				A2B7F55C1BA164100062D64A /* MFUser_NoteModel.m in Sources */,
 				A2686C351BA041E3005C9BED /* MFTaskDetailController.m in Sources */,
 				A2686C1A1BA03AC6005C9BED /* MFPersonCreateController.m in Sources */,
+				5E44C0A11CB4FBA600229400 /* MFHolidayModel+CoreDataProperties.m in Sources */,
 				A2686C421BA04236005C9BED /* MFMessageListController.m in Sources */,
+				5E44C0A01CB4FBA600229400 /* MFUser_NotifModel.m in Sources */,
+				5E44C0AE1CB4FBA600229400 /* MFMessageModel.m in Sources */,
+				5E44C0AC1CB4FBA600229400 /* MFIndexModel.m in Sources */,
 				A2CBF1CE1BA6A5BA0061AF61 /* MFCellModel.m in Sources */,
-				A2B7F56E1BA164120062D64A /* MFBaseModel.m in Sources */,
-				A2B7F58C1BA164130062D64A /* MFNoteModel.m in Sources */,
 				A2686C411BA04236005C9BED /* MFContactListController.m in Sources */,
-				A2B7F5891BA164120062D64A /* MFNoteGroupModel.m in Sources */,
 				A2901CF11B9D7A2F00D92129 /* NSObject+Util.m in Sources */,
+				5E44C0A61CB4FBA600229400 /* MFRegionModel.m in Sources */,
 				A2CBF1D11BA6B1DB0061AF61 /* MFBaseTableViewController.m in Sources */,
-				A2B7F5711BA164120062D64A /* MFNotifModel.m in Sources */,
-				A2B7F5801BA164120062D64A /* MFUser_TaskModel.m in Sources */,
+				5E44C0BB1CB4FBA600229400 /* MFTaskModel+CoreDataProperties.m in Sources */,
 				A2901CEE1B9D737A00D92129 /* MFBackupData.m in Sources */,
 				A2686C451BA04236005C9BED /* MFTaskListController.m in Sources */,
+				5E44C0B41CB4FBA600229400 /* MFUser_MessageModel.m in Sources */,
+				5E44C0A31CB4FBA600229400 /* MFNoteModel+CoreDataProperties.m in Sources */,
 				A2686C431BA04236005C9BED /* MFMoreController.m in Sources */,
-				A2B7F55F1BA164110062D64A /* MFIndexModel.m in Sources */,
+				5E44C0AB1CB4FBA600229400 /* MFIndexModel+CoreDataProperties.m in Sources */,
 				A25DE6E81B9BEA2E0071FD1C /* MFInitialData.m in Sources */,
 				A2F106351B94478100E7B020 /* MFDataHelper.m in Sources */,
+				5E44C0A51CB4FBA600229400 /* MFRegionModel+CoreDataProperties.m in Sources */,
+				5E44C0A41CB4FBA600229400 /* MFNoteModel.m in Sources */,
 				A2686C2C1BA04187005C9BED /* MFNotifDetailController.m in Sources */,
-				A2B7F5831BA164120062D64A /* MFUserModel.m in Sources */,
 				A2CBF1D41BA6B2660061AF61 /* MFPersonEditController.m in Sources */,
-				A2B7F5681BA164110062D64A /* MFUser_MessageModel.m in Sources */,
 				A26C336D1B7B2AC00065E103 /* AppDelegate.m in Sources */,
 				A26C336A1B7B2AC00065E103 /* main.m in Sources */,
 				A2686C1B1BA03AC6005C9BED /* MFPersonDetailController.m in Sources */,
-				A2B7F5741BA164120062D64A /* MFUser_NoteGroupModel.m in Sources */,
+				5E44C0B51CB4FBA600229400 /* MFUser_NoteGroupModel+CoreDataProperties.m in Sources */,
+				5E44C0BD1CB4FBA600229400 /* MFPersonModel+CoreDataProperties.m in Sources */,
 				A2686C231BA040BF005C9BED /* MFNoteListController.m in Sources */,
 				A2FF0CEA1B8C79D000C520A5 /* MFContactCell.m in Sources */,
 				A2FF0CE31B8C632B00C520A5 /* MFMainTabBarController.m in Sources */,
 				A2686C321BA041C8005C9BED /* MFMessageDetailController.m in Sources */,
 				A28B3AC91B96DCF600181B1D /* NSNumber+Util.m in Sources */,
+				5E44C0B31CB4FBA600229400 /* MFUser_MessageModel+CoreDataProperties.m in Sources */,
 				A27089271BA970F70082A15E /* MFSelectView.m in Sources */,
+				5E44C0B11CB4FBA600229400 /* MFNotifModel+CoreDataProperties.m in Sources */,
+				5E44C0B61CB4FBA600229400 /* MFUser_NoteGroupModel.m in Sources */,
 				A26C33701B7B2AC00065E103 /* MyFamily.xcdatamodeld in Sources */,
 				A268CEA41B903E9D00316CBB /* MFRequestHelper.m in Sources */,
+				5E44C0AD1CB4FBA600229400 /* MFMessageModel+CoreDataProperties.m in Sources */,
+				5E44C0A91CB4FBA600229400 /* MFRelationModel+CoreDataProperties.m in Sources */,
 				A2199F7E1B8475830062A750 /* MFBaseViewController.m in Sources */,
 				A2686C1F1BA0401A005C9BED /* MFPasswordMController.m in Sources */,
-				A2B7F57D1BA164120062D64A /* MFUser_NotifModel.m in Sources */,
+				5E44C0BC1CB4FBA600229400 /* MFTaskModel.m in Sources */,
 				A28B3AC61B96D8F500181B1D /* NSString+Util.m in Sources */,
+				5E44C0AF1CB4FBA600229400 /* MFBaseModel+CoreDataProperties.m in Sources */,
+				5E44C0BE1CB4FBA600229400 /* MFPersonModel.m in Sources */,
 				A2F106381B945BB900E7B020 /* MFUtil.m in Sources */,
-				A2B7F5861BA164120062D64A /* MFHolidayModel.m in Sources */,
+				5E44C09F1CB4FBA600229400 /* MFUser_NotifModel+CoreDataProperties.m in Sources */,
+				5E44C0A21CB4FBA600229400 /* MFHolidayModel.m in Sources */,
+				5E44C0B91CB4FBA600229400 /* MFUserModel+CoreDataProperties.m in Sources */,
+				5E44C0B81CB4FBA600229400 /* MFUser_NoteModel.m in Sources */,
+				5E44C0C01CB4FBA600229400 /* MFNoteGroupModel.m in Sources */,
+				5E44C0A81CB4FBA600229400 /* MFUser_TaskModel.m in Sources */,
+				5E44C0B01CB4FBA600229400 /* MFBaseModel.m in Sources */,
+				5E44C0A71CB4FBA600229400 /* MFUser_TaskModel+CoreDataProperties.m in Sources */,
+				5E44C0B71CB4FBA600229400 /* MFUser_NoteModel+CoreDataProperties.m in Sources */,
+				5E44C0BF1CB4FBA600229400 /* MFNoteGroupModel+CoreDataProperties.m in Sources */,
 				A274476B1B959EB5006FD7D1 /* MFInterfaceHelper.m in Sources */,
-				A2B7F56B1BA164110062D64A /* MFPersonModel.m in Sources */,
 				A2686C441BA04236005C9BED /* MFNotifListController.m in Sources */,
+				5E44C0AA1CB4FBA600229400 /* MFRelationModel.m in Sources */,
 				A2686C1C1BA03AC6005C9BED /* MFUserInfoController.m in Sources */,
-				A2B7F5771BA164120062D64A /* MFRelationModel.m in Sources */,
-				A2B7F5651BA164110062D64A /* MFRegionModel.m in Sources */,
+				5E44C0BA1CB4FBA600229400 /* MFUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
