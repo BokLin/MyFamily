@@ -8,6 +8,8 @@
 
 #import "MFMainTabBarController.h"
 
+#import "UITabbar+MFBadge.h"
+
 @interface MFMainTabBarController ()
 
 @end
@@ -33,15 +35,17 @@
             item.badgeValue = @"★";
         }
         if (i == 2) {
-            item.badgeValue = @"2";
+//            item.badgeValue = @"122";
         }
         if (i == 3) {
-            item.badgeValue = nil;
+            item.badgeValue = @"99+";
         }
         if (i == 4) {
-            item.badgeValue = @" ";
+            item.badgeValue = @"1";
         }
     }
+    
+    [self.tabBar showBadgeOnItemIndex:2];
 }
 
 - (void)didReceiveMemoryWarning {
