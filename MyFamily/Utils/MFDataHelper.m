@@ -142,7 +142,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     
     if (predicate == nil) {
-        predicate = [NSPredicate predicateWithFormat:@"x_isDelete != 1"];
+        predicate = [NSPredicate predicateWithFormat:@"x_isDelete == 0"];
     }
     
     [request setEntity:[NSEntityDescription entityForName:tName inManagedObjectContext:[self managedObjectContext]]];

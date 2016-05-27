@@ -10,6 +10,7 @@
 
 #import "UITabbar+MFBadge.h"
 
+
 @interface MFMainTabBarController ()
 
 @end
@@ -46,6 +47,8 @@
     }
     
     [self.tabBar showBadgeOnItemIndex:2];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
