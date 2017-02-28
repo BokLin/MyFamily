@@ -142,7 +142,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     
     if (predicate == nil) {
-        predicate = [NSPredicate predicateWithFormat:@"x_isDelete != 1"];
+        predicate = [NSPredicate predicateWithFormat:@"x_isDelete == 0"];
     }
     
     [request setEntity:[NSEntityDescription entityForName:tName inManagedObjectContext:[self managedObjectContext]]];
@@ -192,9 +192,20 @@
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MyFamily.sqlite"];
+    
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                             
+                             [NSNumber numberWithBool:YES],
+                             
+                             NSMigratePersistentStoresAutomaticallyOption,
+                             
+                             [NSNumber numberWithBool:YES],
+                             
+                             NSInferMappingModelAutomaticallyOption, nil];
+    
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";
